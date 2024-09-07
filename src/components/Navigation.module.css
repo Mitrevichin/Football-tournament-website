@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}

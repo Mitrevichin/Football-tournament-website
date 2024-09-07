@@ -1,0 +1,31 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline: 0 none;
+    list-style-type: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
