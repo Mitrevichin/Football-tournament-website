@@ -1,9 +1,12 @@
+import GroupResult from '../components/GroupResult';
 import Navigation from '../components/Navigation';
+import styles from './Homepage.module.css';
 
 function Homepage() {
   return (
-    <main>
+    <main className={styles.home}>
       <Navigation />
+      <GroupResult />
     </main>
   );
 }

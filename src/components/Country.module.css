@@ -1,0 +1,11 @@
+.country {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.country p {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}

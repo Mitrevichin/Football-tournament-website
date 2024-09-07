@@ -1,7 +1,8 @@
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 5rem;
 }
 
 .nav ul {
