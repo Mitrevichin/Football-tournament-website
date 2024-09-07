@@ -1,9 +1,9 @@
 import styles from './Country.module.css';
 
-function Country({ children, img }) {
+function Country({ children, imgUrl }) {
   return (
     <div className={styles.country}>
-      <img src={img} alt='National flag' />
+      <img src={imgUrl} alt='National flag' />
       <p>{children}</p>
     </div>
   );

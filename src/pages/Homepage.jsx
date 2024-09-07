@@ -1,4 +1,4 @@
-import GroupResult from '../components/GroupResult';
+import GroupStageBox from '../components/GroupStageBox';
 import Navigation from '../components/Navigation';
 import styles from './Homepage.module.css';
 
@@ -6,7 +6,12 @@ function Homepage() {
   return (
     <main className={styles.home}>
       <Navigation />
-      <GroupResult />
+      <GroupStageBox />
+      <GroupStageBox />
+      <GroupStageBox />
+      <GroupStageBox />
+      <GroupStageBox />
+      <GroupStageBox />
     </main>
   );
 }

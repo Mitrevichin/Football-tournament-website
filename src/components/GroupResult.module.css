@@ -1,17 +1,11 @@
 .groupResult {
     text-align: center;
-    width: 20%;
-    background-color: brown;
-    border-radius: 10px;
-}
-
-.groupResult h2 {
-    padding: 0.5rem 0 0.2rem 0;
-    font-size: 1.2rem;
+    background-color: rgb(155, 135, 135);
+    border-radius: 2px;
 }
 
 .container {
-    padding: 0.5rem 0 1.2rem 0;
+    padding: 1.5rem 0 1.2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
