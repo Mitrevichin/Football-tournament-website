@@ -9,5 +9,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     align-items: center;
-    gap: 2rem;
+    column-gap: 6rem;
+    row-gap: 3rem;
 }

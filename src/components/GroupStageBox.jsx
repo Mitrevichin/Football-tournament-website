@@ -1,7 +1,7 @@
 import GroupResult from './GroupResult';
 import styles from './GroupStageBox.module.css';
 
-function GroupStageBox() {
+function GroupStageBox({ matches, teams }) {
   return (
     <div className={styles.container}>
       <h2>Group A</h2>
