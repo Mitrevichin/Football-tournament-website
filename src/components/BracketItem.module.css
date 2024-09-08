@@ -1,0 +1,27 @@
+.liDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: var(--border);
+    padding: 1.7rem 1.5rem 1rem 1.5rem;
+}
+
+.liDiv div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* padding: 0 0.4rem; */
+}
+
+.liDiv div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.liDiv div span:last-child {
+    margin-left: auto;
+}
+
+.flag {
+    width: 2rem;
+    height: 2rem;
+}

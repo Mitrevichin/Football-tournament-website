@@ -3,6 +3,7 @@ import { getMatchDetails } from '../utils/getMatchDetails';
 import GroupStageBox from '../components/GroupStageBox';
 import Navigation from '../components/Navigation';
 import styles from './Homepage.module.css';
+import FinalsBracketView from '../components/FinalsBracketView';
 
 function Homepage() {
   const [matches, setMatches] = useState([]);
@@ -28,10 +29,6 @@ function Homepage() {
       .catch(error => console.error('Error fetching teams:', error));
   }, []);
 
-  // console.log(matches);
-  // console.log('-----------');
-  // console.log(teams);
-
   function csvParser(csvDoc) {
     const [headerLine, ...rows] = csvDoc.split('\n'); // Split into header and rows
     const headers = headerLine.split(','); // Split header into columns
@@ -52,7 +49,6 @@ function Homepage() {
   const groups = ['A', 'B', 'C', 'D', 'E', 'F'];
 
   const matchesWithDetails = getMatchDetails(matches, teams);
-  // console.log(matchesWithDetails);
 
   return (
     <main className={styles.home}>
@@ -67,6 +63,7 @@ function Homepage() {
           matchesWithDetails={matchesWithDetails}
         />
       ))}
+      <FinalsBracketView />
     </main>
   );
 }
