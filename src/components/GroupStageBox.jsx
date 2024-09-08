@@ -1,47 +1,47 @@
 import GroupResult from './GroupResult';
 import styles from './GroupStageBox.module.css';
 
-function GroupStageBox({ matches, teams }) {
+function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
+  // console.log('Matches:', matches);
+  // console.log('Teams:', teams);
+  // console.log('Group:', group);
+  console.log('Matches with details:', matchesWithDetails);
+
+  function isGroupMatch(match) {
+    const month = Number(match.Date.split('/')[0]);
+    const day = Number(match.Date.split('/')[1]);
+    return month === 6 && day <= 26;
+  }
+
+  // Filtering matches per group
+  const filteredMatchesForEachGroup = matchesWithDetails.filter(match => {
+    const teamAGroup = match.teamA ? match.teamA.Group : null;
+    const teamBGroup = match.teamB ? match.teamB.Group : null;
+
+    return (
+      (teamAGroup === group || teamBGroup === group) && isGroupMatch(match)
+    );
+  });
+
   return (
     <div className={styles.container}>
-      <h2>Group A</h2>
+      <h2>Group {group}</h2>
       <section className={styles.box}>
-        <GroupResult
-          teamA='Germany'
-          teamB='Scotland'
-          teamAFlag='https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png'
-          teamBFlag='https://t4.ftcdn.net/jpg/00/96/91/67/360_F_96916794_4rmn1W92aCqyPF9s9575zCFNyYBqzDLu.jpg'
-        />
-        <GroupResult
-          teamA='Hungary '
-          teamB='Switzerland'
-          teamAFlag='https://cdn.britannica.com/55/1455-004-5897143C/Flag-Hungary.jpg'
-          teamBFlag='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7d9K-YEH9mErUvSV0UAISu25NVUiLbUd_Q&s'
-        />
-        <GroupResult
-          teamA='Germany'
-          teamB='Hungary'
-          teamAFlag='https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png'
-          teamBFlag='https://cdn.britannica.com/55/1455-004-5897143C/Flag-Hungary.jpg'
-        />
-        <GroupResult
-          teamA='Scotland '
-          teamB='Switzerland'
-          teamAFlag='https://t4.ftcdn.net/jpg/00/96/91/67/360_F_96916794_4rmn1W92aCqyPF9s9575zCFNyYBqzDLu.jpg'
-          teamBFlag='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7d9K-YEH9mErUvSV0UAISu25NVUiLbUd_Q&s'
-        />
-        <GroupResult
-          teamA='Switzerland'
-          teamB='Germany'
-          teamAFlag='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7d9K-YEH9mErUvSV0UAISu25NVUiLbUd_Q&s'
-          teamBFlag='https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png'
-        />
-        <GroupResult
-          teamA='Scotland'
-          teamB='Hungary'
-          teamAFlag='https://t4.ftcdn.net/jpg/00/96/91/67/360_F_96916794_4rmn1W92aCqyPF9s9575zCFNyYBqzDLu.jpg'
-          teamBFlag='https://cdn.britannica.com/55/1455-004-5897143C/Flag-Hungary.jpg'
-        />
+        {filteredMatchesForEachGroup.map(match => {
+          const formattedScore = match.Score.slice(1);
+
+          return (
+            <GroupResult
+              key={match.ID}
+              teamA={match.teamA.Name}
+              teamB={match.teamB.Name}
+              date={match.Date}
+              score={formattedScore}
+              teamAFlag={match.teamA.Flag}
+              teamBFlag={match.teamB.Flag}
+            />
+          );
+        })}
       </section>
     </div>
   );

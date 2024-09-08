@@ -1,25 +1,25 @@
-﻿ID,Name,ManagerFullName,Group
-1,Germany,Julian Nagelsmann,A
-2,Scotland,Steve Clarke,A
-3,Hungary,Marco Rossi,A
-4,Switzerland,Murat Yakin,A
-5,Spain,Luis de la Fuente,B
-6,Croatia,Zlatko Dalić,B
-7,Italy,Luciano Spalletti,B
-8,Albania,Sylvinho,B
-9,Slovenia,Matjaž Kek,C
-10,Denmark,Kasper Hjulmand,C
-11,Serbia,Dragan Stojković,C
-12,England,Gareth Southgate,C
-13,Poland,Michał Probierz,D
-14,Netherlands,Ronald Koeman,D
-15,Austria,Ralf Rangnick,D
-16,France,Didier Deschamps,D
-17,Belgium,Domenico Tedesco,E
-18,Slovakia,Francesco Calzona,E
-19,Romania,Edward Iordănescu,E
-20,Ukraine,Serhiy Rebrov,E
-21,Turkey,Vincenzo Montella,F
-22,Georgia,Willy Sagnol,F
-23,Portugal,Roberto Martínez,F
-24,Czech Republic,Ivan Hašek,F
+﻿ID,Name,ManagerFullName,Group,Flag
+1,Germany,Julian Nagelsmann,A,https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png
+2,Scotland,Steve Clarke,A,https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Scotland_Pantone300.png
+3,Hungary,Marco Rossi,A,https://cdn.britannica.com/55/1455-004-5897143C/Flag-Hungary.jpg
+4,Switzerland,Murat Yakin,A,https://content.app-sources.com/s/39330979433008693/uploads/store/Switzerland-flag-1-5957046.jpg
+5,Spain,Luis de la Fuente,B,https://www.countryflags.com/wp-content/uploads/spain-flag-png-large.png
+6,Croatia,Zlatko Dalić,B,https://shop.flagfactory.bg/image/cache/catalog/products/flags/national/png/croatia-600x360h.png
+7,Italy,Luciano Spalletti,B,https://www.countryflags.com/wp-content/uploads/italy-flag-png-large.png
+8,Albania,Sylvinho,B,https://www.countryflags.com/wp-content/uploads/albania-flag-png-large.png
+9,Slovenia,Matjaž Kek,C,https://www.countryflags.com/wp-content/uploads/slovenia-flag-png-large.png
+10,Denmark,Kasper Hjulmand,C,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/512px-Flag_of_Denmark.svg.png
+11,Serbia,Dragan Stojković,C,https://www.countryflags.com/wp-content/uploads/serbia-flag-png-large.png
+12,England,Gareth Southgate,C,https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png
+13,Poland,Michał Probierz,D,https://www.countryflags.com/wp-content/uploads/poland-flag-png-large.png
+14,Netherlands,Ronald Koeman,D,https://www.countryflags.com/wp-content/uploads/netherlands-flag-png-large.png
+15,Austria,Ralf Rangnick,D,https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/800px-Flag_of_Austria.svg.png?20220412141234
+16,France,Didier Deschamps,D,https://www.countryflags.com/wp-content/uploads/france-flag-png-large.png
+17,Belgium,Domenico Tedesco,E,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqgeNAeAEwncFomFrvo_LleK3Crj3pl1STg&s
+18,Slovakia,Francesco Calzona,E,https://www.countryflags.com/wp-content/uploads/slovakia-flag-png-large.png
+19,Romania,Edward Iordănescu,E,https://www.countryflags.com/wp-content/uploads/romania-flag-png-large.png
+20,Ukraine,Serhiy Rebrov,E,https://www.countryflags.com/wp-content/uploads/ukraine-flag-png-large.png
+21,Turkey,Vincenzo Montella,F,https://www.countryflags.com/wp-content/uploads/turkey-flag-png-large.png
+22,Georgia,Willy Sagnol,F,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/1200px-Flag_of_Georgia.svg.png
+23,Portugal,Roberto Martínez,F,https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1200px-Flag_of_Portugal.svg.png
+24,Czech R,Ivan Hašek,F,https://www.countryflags.com/wp-content/uploads/czech-republic-flag-png-large.png

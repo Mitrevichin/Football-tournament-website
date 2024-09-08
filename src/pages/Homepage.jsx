@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { getMatchDetails } from '../utils/getMatchDetails';
 import GroupStageBox from '../components/GroupStageBox';
 import Navigation from '../components/Navigation';
 import styles from './Homepage.module.css';
@@ -27,9 +28,9 @@ function Homepage() {
       .catch(error => console.error('Error fetching teams:', error));
   }, []);
 
-  console.log(matches);
-  console.log('-----------');
-  console.log(teams);
+  // console.log(matches);
+  // console.log('-----------');
+  // console.log(teams);
 
   function csvParser(csvDoc) {
     const [headerLine, ...rows] = csvDoc.split('\n'); // Split into header and rows
@@ -50,6 +51,9 @@ function Homepage() {
 
   const groups = ['A', 'B', 'C', 'D', 'E', 'F'];
 
+  const matchesWithDetails = getMatchDetails(matches, teams);
+  // console.log(matchesWithDetails);
+
   return (
     <main className={styles.home}>
       <Navigation />
@@ -57,8 +61,10 @@ function Homepage() {
         <GroupStageBox
           key={group}
           group={group}
+          // matches={matchesWithDetails.filter(match => match.Group === group)}
           matches={matches}
           teams={teams}
+          matchesWithDetails={matchesWithDetails}
         />
       ))}
     </main>
