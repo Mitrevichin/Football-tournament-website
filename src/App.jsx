@@ -11,7 +11,7 @@ function App() {
         <Route path='/' element={<Homepage />} />
         <Route path='/match-details/:matchID' element={<MatchDetails />} />
         <Route
-          path='/match-details/:matchID/team-details'
+          path='/match-details/:matchID/team-details/:teamID'
           element={<TeamDetails />}
         />
         <Route path='*' element={<PageNotFound />} />

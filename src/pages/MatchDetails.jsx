@@ -310,15 +310,17 @@ function MatchDetails() {
       </section>
 
       <div className={styles.btnDetailsWrapper}>
-        <Link to={`/match-details/${matchID}/team-details`}>
+        <Link to={`/match-details/${matchID}/team-details/${teamA.ID}`}>
           <button>
             Team <strong>{teamA.Name}</strong> Details
           </button>
         </Link>
 
-        <button>
-          Team <strong>{teamB.Name}</strong> Details
-        </button>
+        <Link to={`/match-details/${matchID}/team-details/${teamB.ID}`}>
+          <button>
+            Team <strong>{teamB.Name}</strong> Details
+          </button>
+        </Link>
       </div>
       <button className={styles.btnBack} onClick={() => navigate(-1)}>
         &larr; Back

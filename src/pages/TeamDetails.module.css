@@ -1,0 +1,62 @@
+.mainTable {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.mainTable table {
+    border-collapse: collapse;
+    width: 30%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btnBack {
+    margin: 0 auto 50px;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 0.8rem 1.6rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gk {
+    background-color: green;
+}
+
+.df {
+    background-color: brown;
+}
+
+.mf {
+    background-color: rgb(103, 102, 120);
+}
+
+.fr {
+    background-color: crimson;
+}
