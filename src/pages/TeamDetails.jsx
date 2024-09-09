@@ -1,11 +1,5 @@
-import Navigation from '../components/Navigation';
-
 function TeamDetails() {
-  return (
-    <main>
-      <Navigation />
-    </main>
-  );
+  return <main>Team Details</main>;
 }
 
 export default TeamDetails;

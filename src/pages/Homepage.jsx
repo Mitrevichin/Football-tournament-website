@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { getMatchDetails } from '../utils/getMatchDetails';
 import { csvParser } from '../utils/csvParser';
 import GroupStageBox from '../components/GroupStageBox';
-import Navigation from '../components/Navigation';
 import styles from './Homepage.module.css';
 import FinalsBracketView from '../components/FinalsBracketView';
 
@@ -36,7 +35,6 @@ function Homepage() {
 
   return (
     <main className={styles.home}>
-      <Navigation />
       {groups.map(group => (
         <GroupStageBox
           key={group}

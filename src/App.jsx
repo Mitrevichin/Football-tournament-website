@@ -10,8 +10,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/match-details/:matchID' element={<MatchDetails />} />
-        {/* <Route path='match-details' element={<MatchDetails />} /> */}
-        <Route path='team-details' element={<TeamDetails />} />
+        <Route
+          path='/match-details/:matchID/team-details'
+          element={<TeamDetails />}
+        />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

@@ -22,10 +22,11 @@
 }
 
 .pitch {
-    height: 570px;
-    width: 400px;
+    height: 620px;
+    width: 450px;
     background-image: url('/football-field-vertical.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 .btnBack {
@@ -41,8 +42,8 @@
 }
 
 .wholePitch {
-    height: 570px;
-    width: 400px;
+    height: 620px;
+    width: 450px;
     display: flex;
     flex-direction: column;
 }
@@ -50,10 +51,10 @@
 .teamAPitch {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
     /* background-color: lightsteelblue; */
     height: 285px;
-    width: 400px;
+    width: 450px;
     margin-top: 35px;
 }
 
@@ -77,7 +78,7 @@
 
 .number {
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .defenderRow,
@@ -92,55 +93,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
-
-/* .littleFix:first-child,
-.littleFix:last-child {
-    padding-top: 30px;
-} */
-
-.littleFix:nth-child(2),
-.littleFix:nth-child(3) {
-    padding-bottom: 50px;
-}
-
-/* .leftBack,
-.centerBack1,
-.centerBack2,
-.rightBack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: black;
-} */
-
-/* .defenderRow>*,
-.midRow>*,
-.strikerRow>* {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: black;
-} */
 
 .row {
-    height: auto;
-    width: 400px;
+    width: 103%;
 }
 
 .name {
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: white;
     text-align: center;
+    word-wrap: break-word;
 }
 
-.teamBPitch {
+.btnDetailsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .teamBPitch {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -152,4 +126,4 @@
 .teamBPitch>span {
     font-size: 1.2rem;
     font-weight: 600;
-}
+} */
