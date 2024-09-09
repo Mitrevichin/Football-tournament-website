@@ -1,40 +1,40 @@
-ï»¿ID,TeamNumber,Position,FullName,TeamID
+ID,TeamNumber,Position,FullName,TeamID
 1,1,GK,Manuel Neuer,1
-2,2,DF,Antonio RÃ¼diger,1
+2,2,DF,Antonio Rüdiger,1
 3,3,DF,David Raum,1
 4,4,DF,Jonathan Tah,1
-5,5,MF,Pascal GroÃŸ,1
+5,5,MF,Pascal Groß,1
 6,6,DF,Joshua Kimmich,1
 7,7,FW,Kai Havertz,1
 8,8,MF,Toni Kroos,1
-9,9,FW,Niclas FÃ¼llkrug,1
+9,9,FW,Niclas Füllkrug,1
 10,10,MF,Jamal Musiala,1
-11,11,MF,Chris FÃ¼hrich,1
+11,11,MF,Chris Führich,1
 12,12,GK,Oliver Baumann,1
-13,13,FW,Thomas MÃ¼ller,1
+13,13,FW,Thomas Müller,1
 14,14,FW,Maximilian Beier,1
 15,15,DF,Nico Schlotterbeck,1
 16,16,DF,Waldemar Anton,1
 17,17,MF,Florian Wirtz,1
-18,18,DF,Maximilian MittelstÃ¤dt,1
-19,19,MF,Leroy SanÃ©,1
+18,18,DF,Maximilian Mittelstädt,1
+19,19,MF,Leroy Sané,1
 20,20,DF,Benjamin Henrichs,1
-21,21,MF,Ä°lkay GÃ¼ndoÄŸanÂ (captain),1
-22,22,GK,Marc-AndrÃ© ter Stegen,1
+21,21,MF,?lkay Gündo?an (c),1
+22,22,GK,Marc-André ter Stegen,1
 23,23,MF,Robert Andrich,1
 24,24,DF,Robin Koch,1
 25,25,MF,Emre Can,1
 26,26,FW,Deniz Undav,1
 27,1,GK,Angus Gunn,2
 28,2,DF,Anthony Ralston,2
-29,3,DF,Andrew RobertsonÂ (captain),2
+29,3,DF,Andrew Robertson (c),2
 30,4,MF,Scott McTominay,2
 31,5,DF,Grant Hanley,2
 32,6,DF,Kieran Tierney,2
 33,7,MF,John McGinn,2
 34,8,MF,Callum McGregor,2
 35,9,FW,Lawrence Shankland,2
-36,10,FW,ChÃ© Adams,2
+36,10,FW,Ché Adams,2
 37,11,FW,Ryan Christie,2
 38,12,GK,Liam Kelly,2
 39,13,DF,Jack Hendry,2
@@ -51,32 +51,32 @@
 50,24,DF,Greg Taylor,2
 51,25,MF,James Forrest,2
 52,26,DF,Scott McKenna,2
-53,1,GK,PÃ©ter GulÃ¡csi,3
-54,2,DF,ÃdÃ¡m Lang,3
+53,1,GK,Péter Gulácsi,3
+54,2,DF,Ádám Lang,3
 55,3,DF,Botond Balogh,3
 56,4,DF,Attila Szalai,3
 57,5,DF,Attila Fiola,3
-58,6,DF,Willi OrbÃ¡n,3
-59,7,DF,LoÃ¯c NÃ©go,3
-60,8,MF,ÃdÃ¡m Nagy,3
-61,9,FW,Martin ÃdÃ¡m,3
-62,10,MF,Dominik SzoboszlaiÂ (captain),3
+58,6,DF,Willi Orbán,3
+59,7,DF,Loïc Négo,3
+60,8,MF,Ádám Nagy,3
+61,9,FW,Martin Ádám,3
+62,10,MF,Dominik Szoboszlai (captain),3
 63,11,DF,Milos Kerkez,3
-64,12,GK,DÃ©nes Dibusz,3
-65,13,MF,AndrÃ¡s SchÃ¤fer,3
-66,14,DF,BendegÃºz Bolla,3
-67,15,MF,LÃ¡szlÃ³ Kleinheisler,3
-68,16,MF,DÃ¡niel Gazdag,3
+64,12,GK,Dénes Dibusz,3
+65,13,MF,András Schäfer,3
+66,14,DF,Bendegúz Bolla,3
+67,15,MF,László Kleinheisler,3
+68,16,MF,Dániel Gazdag,3
 69,17,MF,Callum Styles,3
 70,18,DF,Zsolt Nagy,3
-71,19,FW,BarnabÃ¡s Varga,3
+71,19,FW,Barnabás Varga,3
 72,20,FW,Roland Sallai,3
 73,21,DF,Endre Botka,3
-74,22,GK,PÃ©ter Szappanos,3
+74,22,GK,Péter Szappanos,3
 75,23,FW,Kevin Csoboth,3
-76,24,DF,MÃ¡rton DÃ¡rdai,3
-77,25,FW,Krisztofer HorvÃ¡th,3
-78,26,MF,MihÃ¡ly Kata,3
+76,24,DF,Márton Dárdai,3
+77,25,FW,Krisztofer Horváth,3
+78,26,MF,Mihály Kata,3
 79,1,GK,Yann Sommer,4
 80,2,DF,Leonidas Stergiou,4
 81,3,DF,Silvan Widmer,4
@@ -86,19 +86,19 @@
 85,7,FW,Breel Embolo,4
 86,8,MF,Remo Freuler,4
 87,9,FW,Noah Okafor,4
-88,10,MF,Granit XhakaÂ (captain),4
+88,10,MF,Granit Xhaka (c),4
 89,11,MF,Renato Steffen,4
 90,12,GK,Yvon Mvogo,4
 91,13,DF,Ricardo Rodriguez,4
 92,14,MF,Steven Zuber,4
-93,15,DF,CÃ©dric Zesiger,4
+93,15,DF,Cédric Zesiger,4
 94,16,MF,Vincent Sierro,4
 95,17,MF,Ruben Vargas,4
 96,18,FW,Kwadwo Duah,4
 97,19,FW,Dan Ndoye,4
 98,20,MF,Michel Aebischer,4
 99,21,GK,Gregor Kobel,4
-100,22,DF,Fabian SchÃ¤r,4
+100,22,DF,Fabian Schär,4
 101,23,MF,Xherdan Shaqiri,4
 102,24,MF,Ardon Jashari,4
 103,25,FW,Zeki Amdouni,4
@@ -109,53 +109,53 @@
 108,4,DF,Nacho,5
 109,5,DF,Daniel Vivian,5
 110,6,MF,Mikel Merino,5
-111,7,FW,Ãlvaro MorataÂ (captain),5
-112,8,MF,FabiÃ¡n Ruiz,5
+111,7,FW,Álvaro Morata (captain),5
+112,8,MF,Fabián Ruiz,5
 113,9,FW,Joselu,5
 114,10,FW,Dani Olmo,5
 115,11,FW,Ferran Torres,5
-116,12,DF,Ãlex Grimaldo,5
-117,13,GK,Ãlex Remiro,5
+116,12,DF,Álex Grimaldo,5
+117,13,GK,Álex Remiro,5
 118,14,DF,Aymeric Laporte,5
-119,15,MF,Ãlex Baena,5
+119,15,MF,Álex Baena,5
 120,16,MF,Rodri,5
 121,17,FW,Nico Williams,5
-122,18,MF,MartÃ­n Zubimendi,5
+122,18,MF,Martín Zubimendi,5
 123,19,FW,Lamine Yamal,5
 124,20,MF,Pedri,5
 125,21,FW,Mikel Oyarzabal,5
-126,22,DF,JesÃºs Navas,5
-127,23,GK,Unai SimÃ³n,5
+126,22,DF,Jesús Navas,5
+127,23,GK,Unai Simón,5
 128,24,DF,Marc Cucurella,5
-129,25,MF,FermÃ­n LÃ³pez,5
-130,26,FW,Ayoze PÃ©rez,5
-131,1,GK,Dominik LivakoviÄ‡,6
-132,2,DF,Josip StaniÅ¡iÄ‡,6
-133,3,DF,Marin PongraÄiÄ‡,6
-134,4,DF,JoÅ¡ko Gvardiol,6
-135,5,DF,Martin ErliÄ‡,6
-136,6,DF,Josip Å utalo,6
+129,25,MF,Fermín López,5
+130,26,FW,Ayoze Pérez,5
+131,1,GK,Dominik Livakovi?,6
+132,2,DF,Josip Staniši?,6
+133,3,DF,Marin Pongra?i?,6
+134,4,DF,Joško Gvardiol,6
+135,5,DF,Martin Erli?,6
+136,6,DF,Josip Šutalo,6
 137,7,MF,Lovro Majer,6
-138,8,MF,Mateo KovaÄiÄ‡,6
-139,9,FW,Andrej KramariÄ‡,6
-140,10,MF,Luka ModriÄ‡Â (captain),6
-141,11,MF,Marcelo BrozoviÄ‡,6
-142,12,GK,Nediljko LabroviÄ‡,6
-143,13,MF,Nikola VlaÅ¡iÄ‡,6
-144,14,FW,Ivan PeriÅ¡iÄ‡,6
-145,15,MF,Mario PaÅ¡aliÄ‡,6
+138,8,MF,Mateo Kova?i?,6
+139,9,FW,Andrej Kramari?,6
+140,10,MF,Luka Modri? (c),6
+141,11,MF,Marcelo Brozovi?,6
+142,12,GK,Nediljko Labrovi?,6
+143,13,MF,Nikola Vlaši?,6
+144,14,FW,Ivan Periši?,6
+145,15,MF,Mario Pašali?,6
 146,16,FW,Ante Budimir,6
-147,17,FW,Bruno PetkoviÄ‡,6
-148,18,FW,Luka IvanuÅ¡ec,6
+147,17,FW,Bruno Petkovi?,6
+148,18,FW,Luka Ivanušec,6
 149,19,DF,Borna Sosa,6
 150,20,FW,Marko Pjaca,6
 151,21,DF,Domagoj Vida,6
-152,22,DF,Josip JuranoviÄ‡,6
-153,23,GK,Ivica IvuÅ¡iÄ‡,6
-154,24,FW,Marco PaÅ¡aliÄ‡,6
-155,25,MF,Luka SuÄiÄ‡,6
+152,22,DF,Josip Juranovi?,6
+153,23,GK,Ivica Ivuši?,6
+154,24,FW,Marco Pašali?,6
+155,25,MF,Luka Su?i?,6
 156,26,MF,Martin Baturina,6
-157,1,GK,Gianluigi DonnarummaÂ (captain),7
+157,1,GK,Gianluigi Donnarumma (c),7
 158,2,DF,Giovanni Di Lorenzo,7
 159,3,DF,Federico Dimarco,7
 160,4,DF,Alessandro Buongiorno,7
@@ -172,21 +172,21 @@
 171,15,DF,Raoul Bellanova,7
 172,16,MF,Bryan Cristante,7
 173,17,DF,Gianluca Mancini,7
-174,18,MF,NicolÃ² Barella,7
+174,18,MF,Nicolò Barella,7
 175,19,FW,Mateo Retegui,7
 176,20,FW,Mattia Zaccagni,7
-177,21,MF,NicolÃ² Fagioli,7
+177,21,MF,Nicolò Fagioli,7
 178,22,FW,Stephan El Shaarawy,7
 179,23,DF,Alessandro Bastoni,7
 180,24,DF,Andrea Cambiaso,7
 181,25,FW,Michael Folorunsho,7
 182,26,GK,Alex Meret,7
 183,1,GK,Etrit Berisha,8
-184,2,DF,IvÃ¡n Balliu,8
+184,2,DF,Iván Balliu,8
 185,3,DF,Mario Mitaj,8
 186,4,DF,Elseid Hysaj,8
 187,5,DF,Arlind Ajeti,8
-188,6,DF,Berat DjimsitiÂ (captain),8
+188,6,DF,Berat Djimsiti (c),8
 189,7,FW,Rey Manaj,8
 190,8,MF,Klaus Gjasula,8
 191,9,FW,Jasir Asani,8
@@ -194,10 +194,10 @@
 193,11,FW,Armando Broja,8
 194,12,GK,Elhan Kastrati,8
 195,13,DF,Enea Mihaj,8
-196,14,MF,Qazim LaÃ§i,8
+196,14,MF,Qazim Laçi,8
 197,15,MF,Taulant Seferi,8
 198,16,FW,Medon Berisha,8
-199,17,FW,Ernest MuÃ§i,8
+199,17,FW,Ernest Muçi,8
 200,18,DF,Ardian Ismajli,8
 201,19,FW,Mirlind Daku,8
 202,20,MF,Ylber Ramadani,8
@@ -206,94 +206,94 @@
 205,23,GK,Thomas Strakosha,8
 206,24,DF,Marash Kumbulla,8
 207,25,DF,Naser Aliji,8
-208,26,FW,ArbÃ«r Hoxha,8
-209,1,GK,Jan OblakÂ (captain),9
-210,2,DF,Å½an KarniÄnik,9
+208,26,FW,Arbër Hoxha,8
+209,1,GK,Jan Oblak (c),9
+210,2,DF,an Karni?nik,9
 211,3,DF,Jure Balkovec,9
-212,4,DF,Miha BlaÅ¾iÄ,9
-213,5,DF,Jon Gorenc StankoviÄ‡,9
+212,4,DF,Miha Blai?,9
+213,5,DF,Jon Gorenc Stankovi?,9
 214,6,DF,Jaka Bijol,9
-215,7,MF,Benjamin VerbiÄ,9
-216,8,MF,Sandi LovriÄ‡,9
-217,9,FW,AndraÅ¾ Å porar,9
-218,10,MF,Timi Max ElÅ¡nik,9
-219,11,FW,Benjamin Å eÅ¡ko,9
+215,7,MF,Benjamin Verbi?,9
+216,8,MF,Sandi Lovri?,9
+217,9,FW,Andra Šporar,9
+218,10,MF,Timi Max Elšnik,9
+219,11,FW,Benjamin Šeško,9
 220,12,GK,Vid Belec,9
-221,13,DF,Erik JanÅ¾a,9
-222,14,MF,Jasmin KurtiÄ‡,9
+221,13,DF,Erik Jana,9
+222,14,MF,Jasmin Kurti?,9
 223,15,MF,Tomi Horvat,9
-224,16,GK,Igor VekiÄ‡,9
+224,16,GK,Igor Veki?,9
 225,17,FW,Jan Mlakar,9
-226,18,FW,Å½an Vipotnik,9
-227,19,FW,Å½an Celar,9
-228,20,DF,Petar StojanoviÄ‡,9
-229,21,DF,Vanja DrkuÅ¡iÄ‡,9
-230,22,MF,Adam Gnezda ÄŒerin,9
+226,18,FW,an Vipotnik,9
+227,19,FW,an Celar,9
+228,20,DF,Petar Stojanovi?,9
+229,21,DF,Vanja Drkuši?,9
+230,22,MF,Adam Gnezda ?erin,9
 231,23,DF,David Brekalo,9
-232,24,MF,Nino Å½ugelj,9
-233,25,MF,Adrian ZeljkoviÄ‡,9
-234,26,MF,Josip IliÄiÄ‡,9
+232,24,MF,Nino ugelj,9
+233,25,MF,Adrian Zeljkovi?,9
+234,26,MF,Josip Ili?i?,9
 235,1,GK,Kasper Schmeichel,10
 236,2,DF,Joachim Andersen,10
 237,3,DF,Jannik Vestergaard,10
-238,4,DF,Simon KjÃ¦rÂ (captain),10
-239,5,DF,Joakim MÃ¦hle,10
+238,4,DF,Simon Kjær (c),10
+239,5,DF,Joakim Mæhle,10
 240,6,DF,Andreas Christensen,10
 241,7,MF,Mathias Jensen,10
 242,8,MF,Thomas Delaney,10
-243,9,FW,Rasmus HÃ¸jlund,10
+243,9,FW,Rasmus Højlund,10
 244,10,MF,Christian Eriksen,10
 245,11,FW,Andreas Skov Olsen,10
 246,12,FW,Kasper Dolberg,10
-247,13,DF,Mathias JÃ¸rgensen,10
+247,13,DF,Mathias Jørgensen,10
 248,14,FW,Mikkel Damsgaard,10
-249,15,MF,Christian NÃ¸rgaard,10
+249,15,MF,Christian Nørgaard,10
 250,16,GK,Mads Hermansen,10
 251,17,DF,Victor Kristiansen,10
 252,18,DF,Alexander Bah,10
 253,19,FW,Jonas Wind,10
 254,20,FW,Yussuf Poulsen,10
 255,21,MF,Morten Hjulmand,10
-256,22,GK,Frederik RÃ¸nnow,10
-257,23,MF,Pierre-Emile HÃ¸jbjerg,10
+256,22,GK,Frederik Rønnow,10
+257,23,MF,Pierre-Emile Højbjerg,10
 258,24,MF,Anders Dreyer,10
 259,25,DF,Rasmus Kristensen,10
 260,26,MF,Jacob Bruun Larsen,10
-261,1,GK,Predrag RajkoviÄ‡,11
-262,2,DF,Strahinja PavloviÄ‡,11
-263,3,DF,Nemanja StojiÄ‡,11
-264,4,DF,Nikola MilenkoviÄ‡,11
-265,5,MF,Nemanja MaksimoviÄ‡,11
+261,1,GK,Predrag Rajkovi?,11
+262,2,DF,Strahinja Pavlovi?,11
+263,3,DF,Nemanja Stoji?,11
+264,4,DF,Nikola Milenkovi?,11
+265,5,MF,Nemanja Maksimovi?,11
 266,6,MF,Nemanja Gudelj,11
-267,7,FW,DuÅ¡an VlahoviÄ‡,11
-268,8,FW,Luka JoviÄ‡,11
-269,9,FW,Aleksandar MitroviÄ‡,11
-270,10,FW,DuÅ¡an TadiÄ‡Â (captain),11
-271,11,FW,Filip KostiÄ‡,11
-272,12,GK,ÄorÄ‘e PetroviÄ‡,11
-273,13,DF,MiloÅ¡ VeljkoviÄ‡,11
-274,14,FW,Andrija Å½ivkoviÄ‡,11
-275,15,DF,SrÄ‘an BabiÄ‡,11
-276,16,MF,SrÄ‘an MijailoviÄ‡,11
-277,17,MF,Ivan IliÄ‡,11
+267,7,FW,Dušan Vlahovi?,11
+268,8,FW,Luka Jovi?,11
+269,9,FW,Aleksandar Mitrovi?,11
+270,10,FW,Dušan Tadi? (c),11
+271,11,FW,Filip Kosti?,11
+272,12,GK,?or?e Petrovi?,11
+273,13,DF,Miloš Veljkovi?,11
+274,14,FW,Andrija ivkovi?,11
+275,15,DF,Sr?an Babi?,11
+276,16,MF,Sr?an Mijailovi?,11
+277,17,MF,Ivan Ili?,11
 278,18,FW,Petar Ratkov,11
-279,19,MF,Lazar SamardÅ¾iÄ‡,11
-280,20,MF,Sergej MilinkoviÄ‡-SaviÄ‡,11
-281,21,MF,Mijat GaÄ‡inoviÄ‡,11
-282,22,MF,SaÅ¡a LukiÄ‡,11
-283,23,GK,Vanja MilinkoviÄ‡-SaviÄ‡,11
-284,24,DF,UroÅ¡ SpajiÄ‡,11
-285,25,DF,Filip MladenoviÄ‡,11
-286,26,MF,Veljko BirmanÄeviÄ‡,11
+279,19,MF,Lazar Samardi?,11
+280,20,MF,Sergej Milinkovi?-Savi?,11
+281,21,MF,Mijat Ga?inovi?,11
+282,22,MF,Saša Luki?,11
+283,23,GK,Vanja Milinkovi?-Savi?,11
+284,24,DF,Uroš Spaji?,11
+285,25,DF,Filip Mladenovi?,11
+286,26,MF,Veljko Birman?evi?,11
 287,1,GK,Jordan Pickford,12
 288,2,DF,Kyle Walker,12
 289,3,DF,Luke Shaw,12
 290,4,MF,Declan Rice,12
 291,5,DF,John Stones,12
-292,6,DF,Marc GuÃ©hi,12
+292,6,DF,Marc Guéhi,12
 293,7,FW,Bukayo Saka,12
 294,8,DF,Trent Alexander-Arnold,12
-295,9,FW,Harry KaneÂ (captain),12
+295,9,FW,Harry Kane (c),12
 296,10,MF,Jude Bellingham,12
 297,11,MF,Phil Foden,12
 298,12,DF,Kieran Trippier,12
@@ -311,37 +311,37 @@
 310,24,MF,Cole Palmer,12
 311,25,MF,Adam Wharton,12
 312,26,MF,Kobbie Mainoo,12
-313,1,GK,Wojciech SzczÄ™sny,13
+313,1,GK,Wojciech Szcz?sny,13
 314,2,DF,Bartosz Salamon,13
-315,3,MF,PaweÅ‚ Dawidowicz,13
+315,3,MF,Pawe? Dawidowicz,13
 316,4,DF,Sebastian Walukiewicz,13
 317,5,DF,Jan Bednarek,13
 318,6,MF,Jakub Piotrowski,13
-319,7,FW,Karol Åšwiderski,13
+319,7,FW,Karol ?widerski,13
 320,8,MF,Jakub Moder,13
-321,9,FW,Robert LewandowskiÂ (captain),13
-322,10,MF,Piotr ZieliÅ„ski,13
+321,9,FW,Robert Lewandowski (c),13
+322,10,MF,Piotr Zieli?ski,13
 323,11,MF,Kamil Grosicki,13
-324,12,GK,Åukasz Skorupski,13
+324,12,GK,?ukasz Skorupski,13
 325,13,MF,Taras Romanczuk,13
 326,14,DF,Jakub Kiwior,13
 327,15,DF,Tymoteusz Puchacz,13
 328,16,FW,Adam Buksa,13
-329,17,MF,Damian SzymaÅ„ski,13
-330,18,DF,Bartosz BereszyÅ„ski,13
-331,19,DF,PrzemysÅ‚aw Frankowski,13
-332,20,MF,Sebastian SzymaÅ„ski,13
+329,17,MF,Damian Szyma?ski,13
+330,18,DF,Bartosz Bereszy?ski,13
+331,19,DF,Przemys?aw Frankowski,13
+332,20,MF,Sebastian Szyma?ski,13
 333,21,MF,Nicola Zalewski,13
-334,22,GK,Marcin BuÅ‚ka,13
-335,23,FW,Krzysztof PiÄ…tek,13
+334,22,GK,Marcin Bu?ka,13
+335,23,FW,Krzysztof Pi?tek,13
 336,24,MF,Bartosz Slisz,13
-337,25,FW,MichaÅ‚ SkÃ³raÅ›,13
-338,26,MF,Kacper UrbaÅ„ski,13
+337,25,FW,Micha? Skóra?,13
+338,26,MF,Kacper Urba?ski,13
 339,1,GK,Bart Verbruggen,14
 340,2,DF,Lutsharel Geertruida,14
 341,3,DF,Matthijs de Ligt,14
-342,4,DF,Virgil van DijkÂ (captain),14
-343,5,DF,Nathan AkÃ©,14
+342,4,DF,Virgil van Dijk (c),14
+343,5,DF,Nathan Aké,14
 344,6,DF,Stefan de Vrij,14
 345,7,FW,Xavi Simons,14
 346,8,MF,Georginio Wijnaldum,14
@@ -364,12 +364,12 @@
 363,25,FW,Steven Bergwijn,14
 364,26,MF,Ryan Gravenberch,14
 365,1,GK,Heinz Lindner,15
-366,2,DF,Maximilian WÃ¶ber,15
+366,2,DF,Maximilian Wöber,15
 367,3,DF,Gernot Trauner,15
 368,4,DF,Kevin Danso,15
 369,5,DF,Stefan Posch,15
 370,6,MF,Nicolas Seiwald,15
-371,7,FW,Marko ArnautoviÄ‡Â (captain),15
+371,7,FW,Marko Arnautovi? (c),15
 372,8,MF,Alexander Prass,15
 373,9,MF,Marcel Sabitzer,15
 374,10,MF,Florian Grillitsch,15
@@ -388,31 +388,31 @@
 387,23,DF,Patrick Wimmer,15
 388,24,FW,Andreas Weimann,15
 389,25,FW,Maximilian Entrup,15
-390,26,MF,Marco GrÃ¼ll,15
+390,26,MF,Marco Grüll,15
 391,1,GK,Brice Samba,16
 392,2,DF,Benjamin Pavard,16
 393,3,DF,Ferland Mendy,16
 394,4,DF,Dayot Upamecano,16
-395,5,DF,Jules KoundÃ©,16
+395,5,DF,Jules Koundé,16
 396,6,MF,Eduardo Camavinga,16
 397,7,FW,Antoine Griezmann,16
-398,8,MF,AurÃ©lien TchouamÃ©ni,16
+398,8,MF,Aurélien Tchouaméni,16
 399,9,FW,Olivier Giroud,16
-400,10,FW,Kylian MbappÃ©Â (captain),16
-401,11,FW,Ousmane DembÃ©lÃ©,16
+400,10,FW,Kylian Mbappé (c),16
+401,11,FW,Ousmane Dembélé,16
 402,12,FW,Randal Kolo Muani,16
-403,13,MF,N'Golo KantÃ©,16
+403,13,MF,N'Golo Kanté,16
 404,14,MF,Adrien Rabiot,16
 405,15,FW,Marcus Thuram,16
 406,16,GK,Mike Maignan,16
 407,17,DF,William Saliba,16
-408,18,MF,Warren ZaÃ¯re-Emery,16
+408,18,MF,Warren Zaïre-Emery,16
 409,19,MF,Youssouf Fofana,16
 410,20,FW,Kingsley Coman,16
 411,21,DF,Jonathan Clauss,16
-412,22,DF,ThÃ©o Hernandez,16
+412,22,DF,Théo Hernandez,16
 413,23,GK,Alphonse Areola,16
-414,24,DF,Ibrahima KonatÃ©,16
+414,24,DF,Ibrahima Konaté,16
 415,25,FW,Bradley Barcola,16
 416,1,GK,Koen Casteels,17
 417,2,DF,Zeno Debast,17
@@ -420,7 +420,7 @@
 419,4,DF,Wout Faes,17
 420,5,DF,Jan Vertonghen,17
 421,6,MF,Axel Witsel,17
-422,7,MF,Kevin De BruyneÂ (captain),17
+422,7,MF,Kevin De Bruyne (c),17
 423,8,MF,Youri Tielemans,17
 424,9,MF,Leandro Trossard,17
 425,10,FW,Romelu Lukaku,17
@@ -433,71 +433,71 @@
 432,17,FW,Charles De Ketelaere,17
 433,18,MF,Orel Mangala,17
 434,19,FW,Johan Bakayoko,17
-435,20,FW,LoÃ¯s Openda,17
+435,20,FW,Loïs Openda,17
 436,21,DF,Timothy Castagne,17
-437,22,FW,JÃ©rÃ©my Doku,17
+437,22,FW,Jérémy Doku,17
 438,23,MF,Arthur Vermeeren,17
 439,24,MF,Amadou Onana,17
 440,25,MF,Maxim De Cuyper,17
-441,1,GK,Martin DÃºbravka,18
-442,2,DF,Peter PekarÃ­k,18
+441,1,GK,Martin Dúbravka,18
+442,2,DF,Peter Pekarík,18
 443,3,DF,Denis Vavro,18
 444,4,DF,Adam Obert,18
-445,5,MF,TomÃ¡Å¡ Rigo,18
-446,6,DF,Norbert GyÃ¶mbÃ©r,18
-447,7,FW,TomÃ¡Å¡ Suslov,18
+445,5,MF,Tomáš Rigo,18
+446,6,DF,Norbert Gyömbér,18
+447,7,FW,Tomáš Suslov,18
 448,8,MF,Ondrej Duda,18
-449,9,FW,RÃ³bert BoÅ¾enÃ­k,18
-450,10,FW,Ä½ubomÃ­r Tupta,18
-451,11,MF,LÃ¡szlÃ³ BÃ©nes,18
-452,12,GK,Marek RodÃ¡k,18
-453,13,MF,Patrik HroÅ¡ovskÃ½,18
-454,14,DF,Milan Å kriniarÂ (captain),18
+449,9,FW,Róbert Boeník,18
+450,10,FW,?ubomír Tupta,18
+451,11,MF,László Bénes,18
+452,12,GK,Marek Rodák,18
+453,13,MF,Patrik Hrošovskı,18
+454,14,DF,Milan Škriniar (c),18
 455,15,DF,Vernon De Marco,18
-456,16,DF,DÃ¡vid Hancko,18
-457,17,FW,LukÃ¡Å¡ HaraslÃ­n,18
+456,16,DF,Dávid Hancko,18
+457,17,FW,Lukáš Haraslín,18
 458,18,FW,David Strelec,18
 459,19,MF,Juraj Kucka,18
-460,20,FW,DÃ¡vid ÄuriÅ¡,18
-461,21,MF,MatÃºÅ¡ Bero,18
+460,20,FW,Dávid ?uriš,18
+461,21,MF,Matúš Bero,18
 462,22,MF,Stanislav Lobotka,18
 463,23,GK,Henrich Ravas,18
 464,24,FW,Leo Sauer,18
-465,25,DF,Sebastian KÃ³Å¡a,18
+465,25,DF,Sebastian Kóša,18
 466,26,FW,Ivan Schranz,18
-467,1,GK,Florin NiÈ›Äƒ,19
-468,2,DF,Andrei RaÈ›iu,19
-469,3,DF,Radu DrÄƒguÈ™in,19
+467,1,GK,Florin Ni??,19
+468,2,DF,Andrei Ra?iu,19
+469,3,DF,Radu Dr?gu?in,19
 470,4,DF,Adrian Rus,19
-471,5,DF,IonuÈ› Nedelcearu,19
+471,5,DF,Ionu? Nedelcearu,19
 472,6,MF,Marius Marin,19
 473,7,FW,Denis Alibec,19
-474,8,MF,Alexandru CicÃ¢ldÄƒu,19
-475,9,FW,George PuÈ™caÈ™,19
+474,8,MF,Alexandru Cicâld?u,19
+475,9,FW,George Pu?ca?,19
 476,10,MF,Ianis Hagi,19
-477,11,DF,NicuÈ™or Bancu,19
-478,12,GK,HoraÈ›iu Moldovan,19
-479,13,FW,Valentin MihÄƒilÄƒ,19
+477,11,DF,Nicu?or Bancu,19
+478,12,GK,Hora?iu Moldovan,19
+479,13,FW,Valentin Mih?il?,19
 480,14,MF,Darius Olaru,19
-481,15,DF,Andrei BurcÄƒ,19
-482,16,GK,È˜tefan TÃ¢rnovanu,19
+481,15,DF,Andrei Burc?,19
+482,16,GK,?tefan Târnovanu,19
 483,17,FW,Florinel Coman,19
-484,18,MF,RÄƒzvan Marin,19
-485,19,FW,Denis DrÄƒguÈ™,19
+484,18,MF,R?zvan Marin,19
+485,19,FW,Denis Dr?gu?,19
 486,20,FW,Dennis Man,19
-487,21,MF,Nicolae StanciuÂ (captain),19
-488,22,DF,Vasile MogoÈ™,19
+487,21,MF,Nicolae Stanciu (c),19
+488,22,DF,Vasile Mogo?,19
 489,23,MF,Deian Sorescu,19
-490,24,DF,Bogdan RacoviÈ›an,19
-491,25,FW,Daniel BÃ®rligea,19
-492,26,MF,Adrian È˜ut,19
+490,24,DF,Bogdan Racovi?an,19
+491,25,FW,Daniel Bîrligea,19
+492,26,MF,Adrian ?ut,19
 493,1,GK,Heorhiy Bushchan,20
 494,2,DF,Yukhym Konoplya,20
 495,3,DF,Oleksandr Svatok,20
 496,4,DF,Maksym Talovyerov,20
 497,5,MF,Serhiy Sydorchuk,20
 498,6,MF,Taras Stepanenko,20
-499,7,MF,Andriy YarmolenkoÂ (captain),20
+499,7,MF,Andriy Yarmolenko (c),20
 500,8,MF,Ruslan Malinovskyi,20
 501,9,FW,Roman Yaremchuk,20
 502,10,FW,Mykhaylo Mudryk,20
@@ -517,36 +517,36 @@
 516,24,DF,Oleksandr Tymchyk,20
 517,25,FW,Vladyslav Vanat,20
 518,26,DF,Bohdan Mykhaylichenko,20
-519,1,GK,Mert GÃ¼nok,21
-520,2,DF,Zeki Ã‡elik,21
+519,1,GK,Mert Günok,21
+520,2,DF,Zeki Çelik,21
 521,3,DF,Merih Demiral,21
 522,4,DF,Samet Akaydin,21
-523,5,MF,Okay YokuÅŸlu,21
-524,6,MF,Orkun KÃ¶kÃ§Ã¼,21
-525,7,FW,Kerem AktÃ¼rkoÄŸlu,21
-526,8,FW,Arda GÃ¼ler,21
+523,5,MF,Okay Yoku?lu,21
+524,6,MF,Orkun Kökçü,21
+525,7,FW,Kerem Aktürko?lu,21
+526,8,FW,Arda Güler,21
 527,9,FW,Cenk Tosun,21
-528,10,MF,Hakan Ã‡alhanoÄŸluÂ (captain),21
-529,11,FW,Yusuf YazÄ±cÄ±,21
-530,12,GK,Altay BayÄ±ndÄ±r,21
+528,10,MF,Hakan Çalhano?lu (c),21
+529,11,FW,Yusuf Yaz?c?,21
+530,12,GK,Altay Bay?nd?r,21
 531,13,DF,Ahmetcan Kaplan,21
-532,14,DF,AbdÃ¼lkerim BardakcÄ±,21
-533,15,MF,Salih Ã–zcan,21
-534,16,MF,Ä°smail YÃ¼ksek,21
-535,17,FW,Ä°rfan Kahveci,21
-536,18,DF,Mert MÃ¼ldÃ¼r,21
-537,19,FW,Kenan YÄ±ldÄ±z,21
-538,20,DF,Ferdi KadÄ±oÄŸlu,21
-539,21,FW,BarÄ±ÅŸ Alper YÄ±lmaz,21
+532,14,DF,Abdülkerim Bardakc?,21
+533,15,MF,Salih Özcan,21
+534,16,MF,?smail Yüksek,21
+535,17,FW,?rfan Kahveci,21
+536,18,DF,Mert Müldür,21
+537,19,FW,Kenan Y?ld?z,21
+538,20,DF,Ferdi Kad?o?lu,21
+539,21,FW,Bar?? Alper Y?lmaz,21
 540,22,MF,Kaan Ayhan,21
-541,23,GK,UÄŸurcan Ã‡akÄ±r,21
-542,24,FW,Semih KÄ±lÄ±Ã§soy,21
-543,25,FW,Yunus AkgÃ¼n,21
-544,26,FW,BertuÄŸ YÄ±ldÄ±rÄ±m,21
+541,23,GK,U?urcan Çak?r,21
+542,24,FW,Semih K?l?çsoy,21
+543,25,FW,Yunus Akgün,21
+544,26,FW,Bertu? Y?ld?r?m,21
 545,1,GK,Giorgi Loria,22
 546,2,DF,Otar Kakabadze,22
 547,3,DF,Lasha Dvali,22
-548,4,DF,Guram KashiaÂ (captain),22
+548,4,DF,Guram Kashia (c),22
 549,5,DF,Solomon Kvirkvelia,22
 550,6,MF,Giorgi Kochorashvili,22
 551,7,FW,Khvicha Kvaratskhelia,22
@@ -569,55 +569,55 @@
 568,24,DF,Jemal Tabidze,22
 569,25,GK,Giorgi Mamardashvili,22
 570,26,MF,Gabriel Sigua,22
-571,1,GK,Rui PatrÃ­cio,23
-572,2,DF,NÃ©lson Semedo,23
+571,1,GK,Rui Patrício,23
+572,2,DF,Nélson Semedo,23
 573,3,DF,Pepe,23
-574,4,DF,RÃºben Dias,23
+574,4,DF,Rúben Dias,23
 575,5,DF,Diogo Dalot,23
-576,6,MF,JoÃ£o Palhinha,23
-577,7,FW,Cristiano RonaldoÂ (captain),23
+576,6,MF,João Palhinha,23
+577,7,FW,Cristiano Ronaldo (c),23
 578,8,MF,Bruno Fernandes,23
-579,9,FW,GonÃ§alo Ramos,23
+579,9,FW,Gonçalo Ramos,23
 580,10,MF,Bernardo Silva,23
-581,11,FW,JoÃ£o FÃ©lix,23
-582,12,GK,JosÃ© SÃ¡,23
+581,11,FW,João Félix,23
+582,12,GK,José Sá,23
 583,13,MF,Danilo Pereira,23
-584,14,DF,GonÃ§alo InÃ¡cio,23
-585,15,MF,JoÃ£o Neves,23
+584,14,DF,Gonçalo Inácio,23
+585,15,MF,João Neves,23
 586,16,MF,Matheus Nunes,23
-587,17,FW,Rafael LeÃ£o,23
-588,18,MF,RÃºben Neves,23
+587,17,FW,Rafael Leão,23
+588,18,MF,Rúben Neves,23
 589,19,DF,Nuno Mendes,23
-590,20,DF,JoÃ£o Cancelo,23
+590,20,DF,João Cancelo,23
 591,21,FW,Diogo Jota,23
 592,22,GK,Diogo Costa,23
 593,23,MF,Vitinha,23
-594,24,DF,AntÃ³nio Silva,23
+594,24,DF,António Silva,23
 595,25,MF,Pedro Neto,23
-596,26,FW,Francisco ConceiÃ§Ã£o,23
-597,1,GK,JindÅ™ich StanÄ›k,24
+596,26,FW,Francisco Conceição,23
+597,1,GK,Jind?ich Stan?k,24
 598,2,DF,David Zima,24
-599,3,MF,TomÃ¡Å¡ HoleÅ¡,24
-600,4,DF,Robin HranÃ¡Ä,24
-601,5,DF,VladimÃ­r Coufal,24
-602,6,DF,Martin VitÃ­k,24
-603,7,MF,AntonÃ­n BarÃ¡k,24
-604,8,MF,Petr Å evÄÃ­k,24
-605,9,FW,Adam HloÅ¾ek,24
+599,3,MF,Tomáš Holeš,24
+600,4,DF,Robin Hraná?,24
+601,5,DF,Vladimír Coufal,24
+602,6,DF,Martin Vitík,24
+603,7,MF,Antonín Barák,24
+604,8,MF,Petr Šev?ík,24
+605,9,FW,Adam Hloek,24
 606,10,FW,Patrik Schick,24
 607,11,FW,Jan Kuchta,24
-608,12,DF,David DoudÄ›ra,24
-609,13,FW,MojmÃ­r Chytil,24
-610,14,MF,LukÃ¡Å¡ Provod,24
-611,15,DF,David JurÃ¡sek,24
-612,16,GK,MatÄ›j KovÃ¡Å™,24
-613,17,FW,VÃ¡clav ÄŒernÃ½,24
-614,18,DF,Ladislav KrejÄÃ­,24
-615,19,FW,TomÃ¡Å¡ ChorÃ½,24
-616,20,MF,OndÅ™ej Lingr,24
-617,21,MF,LukÃ¡Å¡ ÄŒerv,24
-618,22,MF,TomÃ¡Å¡ SouÄekÂ (captain),24
-619,23,GK,VÃ­tÄ›zslav JaroÅ¡,24
-620,24,DF,TomÃ¡Å¡ VlÄek,24
-621,25,MF,Pavel Å ulc,24
-622,26,MF,MatÄ›j JurÃ¡sek,24
+608,12,DF,David Doud?ra,24
+609,13,FW,Mojmír Chytil,24
+610,14,MF,Lukáš Provod,24
+611,15,DF,David Jurásek,24
+612,16,GK,Mat?j Ková?,24
+613,17,FW,Václav ?ernı,24
+614,18,DF,Ladislav Krej?í,24
+615,19,FW,Tomáš Chorı,24
+616,20,MF,Ond?ej Lingr,24
+617,21,MF,Lukáš ?erv,24
+618,22,MF,Tomáš Sou?ek (c),24
+619,23,GK,Vít?zslav Jaroš,24
+620,24,DF,Tomáš Vl?ek,24
+621,25,MF,Pavel Šulc,24
+622,26,MF,Mat?j Jurásek,24

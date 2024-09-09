@@ -5,7 +5,7 @@ function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
   // console.log('Matches:', matches);
   // console.log('Teams:', teams);
   // console.log('Group:', group);
-  console.log('Matches with details:', matchesWithDetails);
+  // console.log('Matches with details:', matchesWithDetails);
 
   function isGroupMatch(match) {
     const month = Number(match.Date.split('/')[0]);
@@ -33,6 +33,7 @@ function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
           return (
             <GroupResult
               key={match.ID}
+              matchID={match.ID}
               teamA={match.teamA.Name}
               teamB={match.teamB.Name}
               date={match.Date}
