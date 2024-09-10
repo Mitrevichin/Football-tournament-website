@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}

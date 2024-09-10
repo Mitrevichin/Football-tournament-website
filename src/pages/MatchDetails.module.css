@@ -1,0 +1,129 @@
+.matchMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    margin-top: 50px;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.pitchContainer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.pitch {
+    height: 620px;
+    width: 450px;
+    background-image: url('/football-field-vertical.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.btnBack {
+    margin: 0 auto 50px;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 0.8rem 1.6rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wholePitch {
+    height: 620px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teamAPitch {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    /* background-color: lightsteelblue; */
+    height: 285px;
+    width: 450px;
+    margin-top: 35px;
+}
+
+.goalkeeperRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.playerView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.number {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.defenderRow,
+.midRow,
+.strikerRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flexRowWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.row {
+    width: 103%;
+}
+
+.name {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.btnDetailsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .teamBPitch {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 50px;
+    height: 285px;
+    width: 400px;
+}
+
+.teamBPitch>span {
+    font-size: 1.2rem;
+    font-weight: 600;
+} */

@@ -1,0 +1,171 @@
+/* :root {
+    --border: 1px solid black;
+}
+
+.finalHeading {
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.bracket {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    overflow: visible;
+    width: 100%;
+}
+
+article {
+    max-width: 250px;
+    min-width: 150px;
+    padding: 0 20px 0 10px;
+    width: 17%;
+}
+
+.bracket ol {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.bracket ol li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+
+article:not(:nth-child(4), :last-child) {
+
+    & li:after,
+    li:before {
+        content: "";
+        display: block;
+        position: absolute;
+    }
+
+    & li:after {
+        right: -16px;
+        width: 15px;
+    }
+
+    & li:nth-child(even):after {
+        border-bottom: var(--border);
+        border-bottom-right-radius: 0.3em;
+        border-right: var(--border);
+        bottom: 50%;
+        height: 80%;
+    }
+
+    & li:nth-child(odd):after {
+        border-right: var(--border);
+        border-top: var(--border);
+        border-top-right-radius: 0.3em;
+        height: 80%;
+        top: 50%;
+    }
+
+    & li:nth-child(odd):before {
+        border-top: var(--border);
+        bottom: -15%;
+        right: -186px;
+        width: 170px;
+    }
+} */
+
+:root {
+    --border: 1px solid black;
+}
+
+.finalHeading {
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.bracket {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    overflow: visible;
+    width: 100%;
+}
+
+article {
+    max-width: 250px;
+    min-width: 150px;
+    padding: 0 20px 0 10px;
+    width: 17%;
+}
+
+.bracket ol {
+    display: flex;
+    flex-flow: row wrap;
+    /*list-style-type: "";*/
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.bracket ol li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* General styles for li::before and li::after */
+.bracket article:not(:nth-child(4)):not(:last-child) li::before,
+.bracket article:not(:nth-child(4)):not(:last-child) li::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+/* Styles for li::after */
+.bracket article:not(:nth-child(4)):not(:last-child) li::after {
+    right: -16px;
+    width: 15px;
+}
+
+/* Styles for even li elements with ::after */
+.bracket article:not(:nth-child(4)):not(:last-child) li:nth-child(even)::after {
+    border-bottom: var(--border);
+    border-bottom-right-radius: 0.3em;
+    border-right: var(--border);
+    bottom: 50%;
+    height: 80%;
+}
+
+/* Styles for odd li elements with ::after */
+.bracket article:not(:nth-child(4)):not(:last-child) li:nth-child(odd)::after {
+    border-right: var(--border);
+    border-top: var(--border);
+    border-top-right-radius: 0.3em;
+    height: 80%;
+    top: 50%;
+}
+
+/* Styles for odd li elements with ::before */
+.bracket article:not(:nth-child(4)):not(:last-child) li:nth-child(odd)::before {
+    border-top: var(--border);
+    bottom: -15%;
+    right: -186px;
+    width: 170px;
+}
+
+/* Specific override for the first li in secondArticle */
+.secondArticle li:nth-child(1)::before {
+    bottom: -150%;
+    /* Custom value for the first item */
+}
