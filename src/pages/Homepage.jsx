@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getMatchDetails } from '../utils/getMatchDetails';
+import { getMatchDetailsForTheFinals } from '../utils/getMatchDetailsForTheFinals';
 import { csvParser } from '../utils/csvParser';
 import GroupStageBox from '../components/GroupStageBox';
 import styles from './Homepage.module.css';
@@ -32,6 +33,14 @@ function Homepage() {
   const groups = ['A', 'B', 'C', 'D', 'E', 'F'];
 
   const matchesWithDetails = getMatchDetails(matches, teams);
+  const matchesWithDetailsForTheFinals = getMatchDetailsForTheFinals(
+    matches,
+    teams
+  );
+
+  console.log('Matches with details: ', matchesWithDetails);
+  // console.log('Matches: ', matches);
+  // console.log('Teams: ', teams);
 
   return (
     <main className={styles.home}>
@@ -39,13 +48,14 @@ function Homepage() {
         <GroupStageBox
           key={group}
           group={group}
-          // matches={matchesWithDetails.filter(match => match.Group === group)}
           matches={matches}
           teams={teams}
           matchesWithDetails={matchesWithDetails}
         />
       ))}
-      <FinalsBracketView />
+      <FinalsBracketView
+        matchesWithDetailsForTheFinals={matchesWithDetailsForTheFinals}
+      />
     </main>
   );
 }

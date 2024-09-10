@@ -35,7 +35,7 @@ function TeamDetails() {
       });
   }, [teamID]);
 
-  console.log('Players: ', players);
+  // console.log('Players: ', players);
 
   return (
     <main className={styles.mainTable}>
