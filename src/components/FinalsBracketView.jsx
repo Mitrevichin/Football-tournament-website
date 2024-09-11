@@ -26,8 +26,10 @@ function FinalsBracketView({ matchesWithDetailsForTheFinals }) {
   }
 
   return (
-    <>
-      <h2 className={styles.finalHeading}>Road to the Final</h2>
+    <div className={styles.finalsContainer}>
+      <h2 id='finals' className={styles.finalHeading}>
+        Road to the Final
+      </h2>
       <div className={styles.bracket}>
         {/* Round of 16 */}
         <article aria-labelledby='round-16'>
@@ -109,7 +111,7 @@ function FinalsBracketView({ matchesWithDetailsForTheFinals }) {
           </ol>
         </article>
       </div>
-    </>
+    </div>
   );
 }
 

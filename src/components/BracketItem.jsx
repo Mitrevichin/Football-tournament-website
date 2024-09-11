@@ -49,12 +49,14 @@ function BracketItem({
                 : `${teamB} wins on penalties`
               : ''}
           </span>
-          <div>
+          <div className={styles.rowTeam}>
             <span className={styles.flag}>
               <img src={flagAUrl} alt='Flag' />
             </span>
             <span className={styles.teamName}>{teamA}</span>
-            <span className={styles.lastChild}>{formatScore(teamAScore)}</span>
+            <span className={`${styles.lastChild} ${styles.score}`}>
+              {formatScore(teamAScore)}
+            </span>
           </div>
           <time className={styles.date}>
             {isDateValid ? (
@@ -68,7 +70,7 @@ function BracketItem({
               <img src={flagBUrl} alt='Flag' />
             </span>
             <span className={styles.teamName}>{teamB}</span>
-            <span>{formatScore(teamBScore)}</span>
+            <span className={styles.score}>{formatScore(teamBScore)}</span>
           </div>
         </div>
       </Link>

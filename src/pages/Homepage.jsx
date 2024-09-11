@@ -5,7 +5,7 @@ import { csvParser } from '../utils/csvParser';
 import GroupStageBox from '../components/GroupStageBox';
 import styles from './Homepage.module.css';
 import FinalsBracketView from '../components/FinalsBracketView';
-import Navigation from '../components/Navigation';
+import Header from '../components/Header';
 
 function Homepage() {
   const [matches, setMatches] = useState([]);
@@ -56,22 +56,23 @@ function Homepage() {
   );
 
   return (
-    <main className={styles.home}>
-      <Navigation />
-
-      {groups.map(group => (
-        <GroupStageBox
-          key={group}
-          group={group}
-          matches={matches}
-          teams={teams}
-          matchesWithDetails={matchesWithDetails}
+    <>
+      <Header />
+      <main className={styles.home}>
+        {groups.map(group => (
+          <GroupStageBox
+            key={group}
+            group={group}
+            matches={matches}
+            teams={teams}
+            matchesWithDetails={matchesWithDetails}
+          />
+        ))}
+        <FinalsBracketView
+          matchesWithDetailsForTheFinals={matchesWithDetailsForTheFinals}
         />
-      ))}
-      <FinalsBracketView
-        matchesWithDetailsForTheFinals={matchesWithDetailsForTheFinals}
-      />
-    </main>
+      </main>
+    </>
   );
 }
 

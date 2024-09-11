@@ -1,6 +1,7 @@
 .groupResult {
     text-align: center;
-    background-color: rgb(155, 135, 135);
+    background-color: rgb(78, 81, 151);
+    box-shadow: 1px 1px 1px rgba(73, 73, 158, 0.523);
     border-radius: 2px;
 }
 
@@ -23,9 +24,10 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.7rem;
+    color: var(--light-color);
 }
 
 .date {
     font-size: 0.7rem;
-    font-weight: 500;
+    color: var(--light-color);
 }

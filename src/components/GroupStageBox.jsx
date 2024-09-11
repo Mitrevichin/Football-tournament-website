@@ -2,7 +2,6 @@ import GroupResult from './GroupResult';
 import styles from './GroupStageBox.module.css';
 
 function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
-
   function isGroupMatch(match) {
     const month = Number(match.Date.split('/')[0]);
     const day = Number(match.Date.split('/')[1]);
@@ -19,7 +18,7 @@ function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
   });
 
   return (
-    <div className={styles.container}>
+    <div id='groupA' className={styles.container}>
       <h2>Group {group}</h2>
       <section className={styles.box}>
         {filteredMatchesForEachGroup.map(match => {

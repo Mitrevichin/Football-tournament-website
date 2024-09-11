@@ -81,11 +81,21 @@ article:not(:nth-child(4), :last-child) {
 } */
 
 :root {
-    --border: 1px solid black;
+    --border: 1px solid var(--light-color);
+}
+
+.finalsContainer {
+    padding: 2rem;
+    background: rgb(13, 30, 98);
+    background: radial-gradient(circle, rgba(13, 30, 98, 1) 0%, rgba(47, 33, 68, 1) 100%);
+}
+
+.finalsContainer h2 {
+    color: var(--light-color);
 }
 
 .finalHeading {
-    margin-top: 100px;
+    margin-top: 50px;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -108,7 +118,6 @@ article {
 .bracket ol {
     display: flex;
     flex-flow: row wrap;
-    /*list-style-type: "";*/
     margin: 0;
     min-height: 100%;
     padding: 0;
@@ -123,6 +132,8 @@ article {
     position: relative;
     width: 100%;
 }
+
+
 
 /* General styles for li::before and li::after */
 .bracket article:not(:nth-child(4)):not(:last-child) li::before,
@@ -168,4 +179,19 @@ article {
 .secondArticle li:nth-child(1)::before {
     bottom: -150%;
     /* Custom value for the first item */
+}
+
+article[aria-labelledby="semi-finals"] li:first-child::before {
+    bottom: -3% !important;
+    border-top: var(--border);
+    right: -186px;
+    width: 170px;
+}
+
+article[aria-labelledby="quarter-finals"] li:nth-child(1):before,
+article[aria-labelledby="quarter-finals"] li:nth-child(3):before {
+    bottom: -6% !important;
+    border-top: var(--border);
+    right: -186px;
+    width: 170px;
 }
