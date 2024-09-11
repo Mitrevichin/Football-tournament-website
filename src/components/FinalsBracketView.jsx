@@ -3,6 +3,7 @@ import { isValidDate } from '../utils/isValidDate';
 import styles from './FinalsBracketView.module.css';
 
 function FinalsBracketView({ matchesWithDetailsForTheFinals }) {
+  
   // Final rounds matches
   const knockoutMatches = matchesWithDetailsForTheFinals.filter(match => {
     if (!isValidDate(match.Date)) {

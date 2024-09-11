@@ -7,7 +7,6 @@
     align-items: center;
     gap: 30px;
     padding-top: 50px;
-    /* background-color: var(--blue-primary-color); */
     background: rgb(0, 13, 64);
     background: linear-gradient(328deg, rgba(0, 13, 64, 1) 36%, rgba(23, 27, 124, 1) 36%, rgba(25, 26, 53, 1) 67%, rgba(0, 13, 64, 1) 67%);
 }
