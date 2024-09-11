@@ -3,13 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(25, 31, 88);
+    background: linear-gradient(309deg, rgba(25, 31, 88, 1) 10%, rgba(13, 30, 98, 1) 32%, rgba(9, 33, 23, 1) 100%);
 }
 
 .result {
+    color: var(--light-color);
     margin-top: 50px;
     font-size: 2rem;
     display: flex;
     gap: 1rem;
+    text-shadow: 1px 1px black;
 }
 
 .pitchContainer {
@@ -19,6 +23,7 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
+
 }
 
 .pitch {
@@ -27,18 +32,8 @@
     background-image: url('/football-field-vertical.jpg');
     background-size: cover;
     background-position: center;
-}
-
-.btnBack {
-    margin: 0 auto 50px;
-    color: inherit;
-    text-transform: uppercase;
-    padding: 0.8rem 1.6rem;
-    font-family: inherit;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    z-index: 1;
+    box-shadow: 1px 1px 10px black;
 }
 
 .wholePitch {
@@ -46,6 +41,18 @@
     width: 450px;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+}
+
+.wholePitch::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.312);
 }
 
 .teamAPitch {
@@ -73,7 +80,13 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(30, 42, 179);
+    border: 1px solid white;
+}
+
+.teamBColor {
+    background-color: rgb(10, 13, 63);
+
 }
 
 .number {
@@ -94,6 +107,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    z-index: 10;
 }
 
 .row {
@@ -106,6 +120,7 @@
     color: white;
     text-align: center;
     word-wrap: break-word;
+    z-index: 10;
 }
 
 .btnDetailsWrapper {
@@ -114,16 +129,127 @@
     justify-content: space-evenly;
 }
 
-/* .teamBPitch {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-top: 50px;
-    height: 285px;
-    width: 400px;
+.btnDetailsWrapper button {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+    background-color: var(--blue-secondary-color);
+    color: var(--light-color);
+    border: 0.5px solid white;
+    text-shadow: 1px 1px black;
 }
 
-.teamBPitch>span {
-    font-size: 1.2rem;
-    font-weight: 600;
-} */
+.teamABtn {
+    background-color: rgb(30, 42, 179);
+    cursor: pointer;
+}
+
+.teamABtn:hover {
+    background: rgb(6, 8, 55);
+    border: 1px solid rgb(162, 169, 162);
+    transition: 0.3s;
+}
+
+.teamBBtn {
+    cursor: pointer;
+}
+
+.teamBBtn:hover {
+    background: rgb(6, 8, 55);
+    border: 1px solid rgb(162, 169, 162);
+    transition: 0.3s;
+}
+
+.btnBack {
+    margin: 0 auto 50px;
+    text-transform: uppercase;
+    padding: 0.7rem 1.6rem;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: var(--blue-secondary-color);
+    color: var(--light-color);
+    border: 0.5px solid white;
+    cursor: pointer;
+    text-shadow: 1px 1px black;
+}
+
+.btnBack:hover {
+    background: rgb(6, 8, 55);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+    .pitchContainer {
+        flex-direction: column;
+    }
+
+    .btnDetailsWrapper {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .pitchContainer {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .pitch {
+        height: 550px;
+        width: 400px;
+        background-size: contain;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    .result {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .row {
+        width: 90%;
+    }
+
+    .teamAPitch {
+        gap: 3.5rem;
+    }
+
+    .name {
+        font-size: 0.5rem;
+    }
+
+    .btnBack {
+        text-transform: uppercase;
+        padding: 0.7rem 1.5rem;
+        font-family: inherit;
+        font-size: 1.2rem;
+
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .pitch {
+        height: 420px;
+        width: 300px;
+    }
+
+    .row {
+        width: 68%;
+    }
+
+    .result {
+        font-size: 1.3rem;
+    }
+
+    .teamAPitch {
+        gap: 2rem;
+    }
+}

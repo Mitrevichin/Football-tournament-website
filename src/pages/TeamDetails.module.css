@@ -7,11 +7,24 @@
     align-items: center;
     gap: 30px;
     padding-top: 50px;
+
+}
+
+.mainTable a {
+    text-decoration: none;
+    padding: 0.7rem 1.6rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background-color: var(--blue-secondary-color);
+    color: var(--light-color);
+    letter-spacing: 0.5px;
+    /* border: 0.5px solid white; */
 }
 
 .mainTable table {
     border-collapse: collapse;
     width: 30%;
+    border-radius: 10px;
 }
 
 th,
@@ -37,11 +50,10 @@ td {
     margin: 0 auto 50px;
     color: inherit;
     text-transform: uppercase;
-    padding: 0.8rem 1.6rem;
+    padding: 0.7rem 1.6rem;
     font-family: inherit;
     font-size: 1.5rem;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -59,4 +71,11 @@ td {
 
 .fr {
     background-color: crimson;
+}
+
+@media screen and (max-width: 426px) {
+    .btnBack {
+        padding: 0.7rem 1.5rem;
+        font-size: 1.3rem;
+    }
 }

@@ -2,6 +2,7 @@ import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { csvParser } from '../utils/csvParser';
 import styles from './MatchDetails.module.css';
+import Loader from '../components/Loader';
 
 function MatchDetails() {
   const [match, setMatch] = useState([]);
@@ -66,7 +67,6 @@ function MatchDetails() {
     fetchData();
   }, [matchID]);
 
-  if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
   const teamAResult = match.Score?.split('')[1];
@@ -133,174 +133,197 @@ function MatchDetails() {
   }
 
   return (
-    <main className={styles.matchMain}>
-      <div className={styles.result}>
-        <span>
-          {teamA.Name} &nbsp; {teamAResult}
-        </span>
-        <span>:</span>
-        <span>
-          {teamBResult} &nbsp; {teamB.Name}
-        </span>
-      </div>
+    <>
+      {loading && <Loader />}
+      <main className={styles.matchMain}>
+        <div className={styles.result}>
+          <span>
+            {teamA.Name} &nbsp; {teamAResult}
+          </span>
+          <span>:</span>
+          <span>
+            {teamBResult} &nbsp; {teamB.Name}
+          </span>
+        </div>
 
-      <section className={styles.pitchContainer}>
-        <div className={styles.pitch}>
-          <div className={styles.wholePitch}>
-            {/* The first team */}
-            <div className={styles.teamAPitch}>
-              {/* Goalkeeper */}
-              {goalkeeperA && (
-                <div className={`${styles.goalkeeperRow} ${styles.row}`}>
-                  <div className={styles.playerView}>
-                    <span className={styles.number}>
-                      {goalkeeperA.TeamNumber}
+        <section className={styles.pitchContainer}>
+          <div className={styles.pitch}>
+            <div className={styles.wholePitch}>
+              {/* The first team */}
+              <div className={styles.teamAPitch}>
+                {/* Goalkeeper */}
+                {goalkeeperA && (
+                  <div className={`${styles.goalkeeperRow} ${styles.row}`}>
+                    <div className={styles.playerView}>
+                      <span className={styles.number}>
+                        {goalkeeperA.TeamNumber}
+                      </span>
+                    </div>
+                    <span className={styles.name}>
+                      {transformFullName(goalkeeperA.FullName)}
                     </span>
                   </div>
-                  <span className={styles.name}>
-                    {transformFullName(goalkeeperA.FullName)}
-                  </span>
+                )}
+
+                {/* Defenders */}
+                <div className={`${styles.defenderRow} ${styles.row}`}>
+                  {defendersA.map((player, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.flexRowWrapper} ${styles.littleFix}`}
+                    >
+                      <div className={styles.playerView}>
+                        <span className={styles.number}>
+                          {player.TeamNumber}
+                        </span>
+                      </div>
+                      <span className={styles.name}>
+                        {transformFullName(player.FullName)}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              )}
 
-              {/* Defenders */}
-              <div className={`${styles.defenderRow} ${styles.row}`}>
-                {defendersA.map((player, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.flexRowWrapper} ${styles.littleFix}`}
-                  >
-                    <div className={styles.playerView}>
-                      <span className={styles.number}>{player.TeamNumber}</span>
+                {/* Midfielders */}
+                <div className={`${styles.midRow} ${styles.row}`}>
+                  {midfieldersA.map((player, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.flexRowWrapper} ${styles.littleFix}`}
+                    >
+                      <div className={styles.playerView}>
+                        <span className={styles.number}>
+                          {player.TeamNumber}
+                        </span>
+                      </div>
+                      <span className={styles.name}>
+                        {transformFullName(player.FullName)}
+                      </span>
                     </div>
-                    <span className={styles.name}>
-                      {transformFullName(player.FullName)}
-                    </span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              {/* Midfielders */}
-              <div className={`${styles.midRow} ${styles.row}`}>
-                {midfieldersA.map((player, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.flexRowWrapper} ${styles.littleFix}`}
-                  >
-                    <div className={styles.playerView}>
-                      <span className={styles.number}>{player.TeamNumber}</span>
+                {/* Strikers */}
+                <div className={`${styles.strikerRow} ${styles.row}`}>
+                  {strikersA.map((player, index) => (
+                    <div key={index} className={styles.flexRowWrapper}>
+                      <div className={styles.playerView}>
+                        <span className={styles.number}>
+                          {player.TeamNumber}
+                        </span>
+                      </div>
+                      <span className={styles.name}>
+                        {transformFullName(player.FullName)}
+                      </span>
                     </div>
-                    <span className={styles.name}>
-                      {transformFullName(player.FullName)}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Strikers */}
-              <div className={`${styles.strikerRow} ${styles.row}`}>
-                {strikersA.map((player, index) => (
-                  <div key={index} className={styles.flexRowWrapper}>
-                    <div className={styles.playerView}>
-                      <span className={styles.number}>{player.TeamNumber}</span>
-                    </div>
-                    <span className={styles.name}>
-                      {transformFullName(player.FullName)}
-                    </span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className={styles.pitch}>
-          <div className={styles.wholePitch}>
-            {/* The second team */}
-            <div className={styles.teamAPitch}>
-              {/* Goalkeeper */}
-              {goalkeeperA && (
-                <div className={`${styles.goalkeeperRow} ${styles.row}`}>
-                  <div className={styles.playerView}>
-                    <span className={styles.number}>
-                      {goalkeeperB.TeamNumber}
+          <div className={styles.pitch}>
+            <div className={styles.wholePitch}>
+              {/* The second team */}
+              <div className={styles.teamAPitch}>
+                {/* Goalkeeper */}
+                {goalkeeperA && (
+                  <div className={`${styles.goalkeeperRow} ${styles.row}`}>
+                    <div
+                      className={`${styles.playerView} ${styles.teamBColor}`}
+                    >
+                      <span className={styles.number}>
+                        {goalkeeperB.TeamNumber}
+                      </span>
+                    </div>
+                    <span className={styles.name}>
+                      {transformFullName(goalkeeperB.FullName)}
                     </span>
                   </div>
-                  <span className={styles.name}>
-                    {transformFullName(goalkeeperB.FullName)}
-                  </span>
+                )}
+
+                {/* Defenders */}
+                <div className={`${styles.defenderRow} ${styles.row}`}>
+                  {defendersB.map((player, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.flexRowWrapper} ${styles.littleFix}`}
+                    >
+                      <div
+                        className={`${styles.playerView} ${styles.teamBColor}`}
+                      >
+                        <span className={styles.number}>
+                          {player.TeamNumber}
+                        </span>
+                      </div>
+                      <span className={styles.name}>
+                        {transformFullName(player.FullName)}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-              )}
 
-              {/* Defenders */}
-              <div className={`${styles.defenderRow} ${styles.row}`}>
-                {defendersB.map((player, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.flexRowWrapper} ${styles.littleFix}`}
-                  >
-                    <div className={styles.playerView}>
-                      <span className={styles.number}>{player.TeamNumber}</span>
+                {/* Midfielders */}
+                <div className={`${styles.midRow} ${styles.row}`}>
+                  {midfieldersB.map((player, index) => (
+                    <div
+                      key={index}
+                      className={`${styles.flexRowWrapper} ${styles.littleFix}`}
+                    >
+                      <div
+                        className={`${styles.playerView} ${styles.teamBColor}`}
+                      >
+                        <span className={styles.number}>
+                          {player.TeamNumber}
+                        </span>
+                      </div>
+                      <span className={styles.name}>
+                        {transformFullName(player.FullName)}
+                      </span>
                     </div>
-                    <span className={styles.name}>
-                      {transformFullName(player.FullName)}
-                    </span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              {/* Midfielders */}
-              <div className={`${styles.midRow} ${styles.row}`}>
-                {midfieldersB.map((player, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.flexRowWrapper} ${styles.littleFix}`}
-                  >
-                    <div className={styles.playerView}>
-                      <span className={styles.number}>{player.TeamNumber}</span>
+                {/* Strikers */}
+                <div className={`${styles.strikerRow} ${styles.row}`}>
+                  {strikersB.map((player, index) => (
+                    <div key={index} className={styles.flexRowWrapper}>
+                      <div
+                        className={`${styles.playerView} ${styles.teamBColor}`}
+                      >
+                        <span className={styles.number}>
+                          {player.TeamNumber}
+                        </span>
+                      </div>
+                      <span className={styles.name}>
+                        {transformFullName(player.FullName)}
+                      </span>
                     </div>
-                    <span className={styles.name}>
-                      {transformFullName(player.FullName)}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Strikers */}
-              <div className={`${styles.strikerRow} ${styles.row}`}>
-                {strikersB.map((player, index) => (
-                  <div key={index} className={styles.flexRowWrapper}>
-                    <div className={styles.playerView}>
-                      <span className={styles.number}>{player.TeamNumber}</span>
-                    </div>
-                    <span className={styles.name}>
-                      {transformFullName(player.FullName)}
-                    </span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
+        </section>
+
+        <div className={styles.btnDetailsWrapper}>
+          <Link to={`/match-details/${matchID}/team-details/${teamA.ID}`}>
+            <button className={styles.teamABtn}>
+              Team <strong>{teamA.Name}</strong> Details &nbsp; &rarr;
+            </button>
+          </Link>
+
+          <Link to={`/match-details/${matchID}/team-details/${teamB.ID}`}>
+            <button className={styles.teamBBtn}>
+              Team <strong>{teamB.Name}</strong> Details &nbsp; &rarr;
+            </button>
+          </Link>
         </div>
-      </section>
-
-      <div className={styles.btnDetailsWrapper}>
-        <Link to={`/match-details/${matchID}/team-details/${teamA.ID}`}>
-          <button>
-            Team <strong>{teamA.Name}</strong> Details
-          </button>
-        </Link>
-
-        <Link to={`/match-details/${matchID}/team-details/${teamB.ID}`}>
-          <button>
-            Team <strong>{teamB.Name}</strong> Details
-          </button>
-        </Link>
-      </div>
-      <button className={styles.btnBack} onClick={() => navigate(-1)}>
-        &larr; Back
-      </button>
-    </main>
+        <button className={styles.btnBack} onClick={() => navigate(-1)}>
+          &larr; Back
+        </button>
+      </main>
+    </>
   );
 }
 

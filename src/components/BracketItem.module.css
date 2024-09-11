@@ -9,6 +9,11 @@
     border-radius: 10px;
 }
 
+.liDiv:hover {
+    background-color: rgb(71, 33, 105);
+    transition: 0.3s;
+}
+
 .liDiv div {
     display: flex;
     justify-content: center;
