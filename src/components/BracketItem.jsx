@@ -24,6 +24,14 @@ function BracketItem({
     return `${mainScore} ${additionalScore}`;
   }
 
+  function penaltyScore(score) {
+    const match = score.match(/\((\d+)\)/);
+    return match ? parseInt(match[1], 10) : null;
+  }
+
+  const teamAPenaltyScore = penaltyScore(teamAScore);
+  const teamBPenaltyScore = penaltyScore(teamBScore);
+
   return (
     <li className={styles.semiLi}>
       <Link
@@ -33,7 +41,9 @@ function BracketItem({
         <div className={styles.liDiv}>
           <span className={styles.text}>
             {teamAScore.length > 2 || teamBScore.length > 2
-              ? 'Win on penalties'
+              ? teamAPenaltyScore > teamBPenaltyScore
+                ? `${teamA} wins on penalties`
+                : `${teamB} wins on penalties`
               : ''}
           </span>
           <div>
