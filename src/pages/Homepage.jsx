@@ -6,6 +6,7 @@ import GroupStageBox from '../components/GroupStageBox';
 import styles from './Homepage.module.css';
 import FinalsBracketView from '../components/FinalsBracketView';
 import Header from '../components/Header';
+import Loader from '../components/Loader';
 
 function Homepage() {
   const [matches, setMatches] = useState([]);
@@ -44,7 +45,7 @@ function Homepage() {
     fetchData();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
+  // if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
   const groups = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -57,6 +58,7 @@ function Homepage() {
 
   return (
     <>
+      {loading && <Loader />}
       <Header />
       <main className={styles.home}>
         {groups.map(group => (
