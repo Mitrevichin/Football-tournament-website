@@ -103,3 +103,16 @@ Develop a dynamic and interactive React web application to visualize and manage 
 - **Key Functionality:**
   - Creates a lookup object for team details.
   - Enhances match data with team information.
+
+### isValidDate
+
+- **Purpose:** Validates a date string against multiple date formats.
+- **Key Functionality:**
+  - Checks if the date string matches one of the predefined date formats.
+  - Returns the format if the date is valid or 'Invalid Date Format' if not.
+- **Supported Formats:**
+  - `YYYY-MM-DD`
+  - `MM/DD/YYYY`
+  - `DD/MM/YYYY`
+  - `MM-DD-YYYY`
+  - `YYYY/MM/DD`

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { isValidDate } from '../utils/isValidDate';
 import Country from './Country';
 import styles from './GroupResult.module.css';
 
@@ -11,6 +12,9 @@ function GroupResult({
   teamAFlag,
   teamBFlag,
 }) {
+  const dateFormat = isValidDate(date);
+  const isDateValid = dateFormat !== 'Invalid Date Format';
+
   return (
     <Link
       to={`/match-details/${matchID}`}
@@ -21,7 +25,13 @@ function GroupResult({
           <Country imgUrl={teamAFlag}>{teamA}</Country>
           <div>
             <span className={styles.result}>{score}</span>
-            <span className={styles.date}>{date}</span>
+            <time className={styles.date}>
+              {isDateValid ? (
+                date
+              ) : (
+                <span className={styles.error}>Invalid Date</span>
+              )}
+            </time>
           </div>
           <Country imgUrl={teamBFlag}>{teamB}</Country>
         </div>

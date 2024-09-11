@@ -2,10 +2,6 @@ import GroupResult from './GroupResult';
 import styles from './GroupStageBox.module.css';
 
 function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
-  // console.log('Matches:', matches);
-  // console.log('Teams:', teams);
-  // console.log('Group:', group);
-  // console.log('Matches with details:', matchesWithDetails);
 
   function isGroupMatch(match) {
     const month = Number(match.Date.split('/')[0]);
@@ -13,7 +9,6 @@ function GroupStageBox({ matches, teams, group, matchesWithDetails }) {
     return month === 6 && day <= 26;
   }
 
-  // Filtering matches per group
   const filteredMatchesForEachGroup = matchesWithDetails.filter(match => {
     const teamAGroup = match.teamA ? match.teamA.Group : null;
     const teamBGroup = match.teamB ? match.teamB.Group : null;

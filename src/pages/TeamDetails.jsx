@@ -5,20 +5,26 @@ import { csvParser } from '../utils/csvParser';
 import styles from './TeamDetails.module.css';
 
 function TeamDetails() {
-  const { matchID, teamID } = useParams();
   const [players, setPlayers] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  const { teamID } = useParams();
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/players.csv')
-      .then(response => response.text())
-      .then(data => {
+    const fetchPlayers = async () => {
+      try {
+        const response = await fetch('/players.csv');
+        if (!response.ok) {
+          throw new Error('Failed to fetch players');
+        }
+        const data = await response.text();
         const parsedPlayers = csvParser(data);
         const teamPlayers = parsedPlayers.filter(
           player => player.TeamID === teamID
         );
-        setPlayers(teamPlayers);
 
         const positionOrder = {
           GK: 1,
@@ -32,10 +38,20 @@ function TeamDetails() {
         );
 
         setPlayers(sortedPlayers);
-      });
+      } catch (error) {
+        console.error('Error fetching players:', error);
+        setError(error.message);
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPlayers();
   }, [teamID]);
 
-  // console.log('Players: ', players);
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   return (
     <main className={styles.mainTable}>

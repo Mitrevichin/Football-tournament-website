@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './BracketItem.module.css';
+import { isValidDate } from '../utils/isValidDate';
 
 function BracketItem({
   matchID,
@@ -17,10 +18,9 @@ function BracketItem({
     if (openParenIndex === -1) {
       return score;
     }
-
     const mainScore = score.slice(0, openParenIndex);
     const additionalScore = score.slice(openParenIndex);
-    console.log('additionalScore', additionalScore);
+
     return `${mainScore} ${additionalScore}`;
   }
 
@@ -31,6 +31,9 @@ function BracketItem({
 
   const teamAPenaltyScore = penaltyScore(teamAScore);
   const teamBPenaltyScore = penaltyScore(teamBScore);
+
+  const dateFormat = isValidDate(date);
+  const isDateValid = dateFormat !== 'Invalid Date Format';
 
   return (
     <li className={styles.semiLi}>
@@ -53,7 +56,13 @@ function BracketItem({
             <span className={styles.teamName}>{teamA}</span>
             <span className={styles.lastChild}>{formatScore(teamAScore)}</span>
           </div>
-          <time className={styles.date}>{date}</time>
+          <time className={styles.date}>
+            {isDateValid ? (
+              date
+            ) : (
+              <span className={styles.error}>Invalid Date</span>
+            )}
+          </time>
           <div>
             <span className={styles.flag}>
               <img src={flagBUrl} alt='Flag' />

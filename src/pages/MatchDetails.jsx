@@ -9,57 +9,69 @@ function MatchDetails() {
   const [teamB, setTeamB] = useState([]);
   const [players, setPlayers] = useState([]);
   const [records, setRecords] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const { matchID } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetching match data
-    fetch('/matches.csv')
-      .then(response => response.text())
-      .then(data => {
-        const parsedMatches = csvParser(data);
+    const fetchData = async () => {
+      try {
+        // Matches
+        const matchesResponse = await fetch('/matches.csv');
+        if (!matchesResponse.ok) {
+          throw new Error('Failed to fetch matches');
+        }
+        const matchesData = await matchesResponse.text();
+        const parsedMatches = csvParser(matchesData);
         const currentMatch = parsedMatches.find(m => m.ID === matchID);
         setMatch(currentMatch);
 
-        // Fetching team data
-        fetch('/teams.csv')
-          .then(response => response.text())
-          .then(data => {
-            const parsedTeams = csvParser(data);
-            setTeamA(parsedTeams.find(t => t.ID === currentMatch.ATeamID));
-            setTeamB(parsedTeams.find(t => t.ID === currentMatch.BTeamID));
-          });
+        // Teams
+        const teamsResponse = await fetch('/teams.csv');
+        if (!teamsResponse.ok) {
+          throw new Error('Failed to fetch teams');
+        }
+        const teamsData = await teamsResponse.text();
+        const parsedTeams = csvParser(teamsData);
+        setTeamA(parsedTeams.find(t => t.ID === currentMatch.ATeamID));
+        setTeamB(parsedTeams.find(t => t.ID === currentMatch.BTeamID));
 
-        // Fetching player data
-        fetch('/players.csv')
-          .then(response => response.text())
-          .then(data => {
-            const parsedPlayers = csvParser(data);
-            setPlayers(parsedPlayers);
-          });
+        // Players
+        const playersResponse = await fetch('/players.csv');
+        if (!playersResponse.ok) {
+          throw new Error('Failed to fetch players');
+        }
+        const playersData = await playersResponse.text();
+        const parsedPlayers = csvParser(playersData);
+        setPlayers(parsedPlayers);
 
-        // Fetching records data
-        fetch('/records.csv')
-          .then(response => response.text())
-          .then(data => {
-            const parsedRecords = csvParser(data);
-            setRecords(parsedRecords);
-          });
-      });
+        // Records
+        const recordsResponse = await fetch('/records.csv');
+        if (!recordsResponse.ok) {
+          throw new Error('Failed to fetch records');
+        }
+        const recordsData = await recordsResponse.text();
+        const parsedRecords = csvParser(recordsData);
+        setRecords(parsedRecords);
+      } catch (error) {
+        console.error('Error:', error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, [matchID]);
 
-  // console.log(records);
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
 
   const teamAResult = match.Score?.split('')[1];
   const teamBResult = match.Score?.split('')[3];
 
-  // Function to get players for a given team
-  // const getPlayersForTeam = teamID => {
-  //   return players.filter(player => player.TeamID === teamID);
-  // };
-
-  // Function to get starting players for a given team from records
   const getStartingPlayersForTeam = (teamID, matchID) => {
     const teamRecords = records.filter(record => record.MatchID === matchID);
 
@@ -81,10 +93,7 @@ function MatchDetails() {
   const startingPlayersA = getStartingPlayersForTeam(teamA.ID, matchID);
   const startingPlayersB = getStartingPlayersForTeam(teamB.ID, matchID);
 
-  // const teamAPlayers = getPlayersForTeam(match.ATeamID);
-  // const teamBPlayers = getPlayersForTeam(match.BTeamID);
-
-  // Players for team A
+  // Team A
   const goalkeeperA = startingPlayersA.find(
     player => player?.Position === 'GK'
   );
@@ -100,20 +109,7 @@ function MatchDetails() {
     player => player?.Position === 'FW'
   );
 
-  // Similarly for team B
-
-  // const goalkeeperA = teamAPlayers.find(player => player.Position === 'GK');
-  // const defendersA = teamAPlayers
-  //   .filter(player => player.Position === 'DF')
-  //   .slice(0, 4);
-  // const midfieldersA = teamAPlayers
-  //   .filter(player => player.Position === 'MF')
-  //   .slice(0, 4);
-  // const strikersA = teamAPlayers
-  //   .filter(player => player.Position === 'FW')
-  //   .slice(0, 2);
-
-  // Players for team B
+  // Team B
   const goalkeeperB = startingPlayersB.find(
     player => player?.Position === 'GK'
   );
@@ -128,27 +124,6 @@ function MatchDetails() {
   const strikersB = startingPlayersB.filter(
     player => player?.Position === 'FW'
   );
-
-  // Similarly for team B
-
-  // const goalkeeperB = teamBPlayers.find(player => player.Position === 'GK');
-  // const defendersB = teamBPlayers
-  //   .filter(player => player.Position === 'DF')
-  //   .slice(0, 4);
-  // const midfieldersB = teamBPlayers
-  //   .filter(player => player.Position === 'MF')
-  //   .slice(0, 4);
-  // const strikersB = teamBPlayers
-  //   .filter(player => player.Position === 'FW')
-  //   .slice(0, 2);
-
-  // console.log('TeamA :', teamAPlayers);
-  // console.log('TeamB :', teamBPlayers);
-
-  // console.log('Match :', match);
-  // console.log('teamA :', teamA);
-  // console.log('teamB :', teamB);
-  // console.log('Players :', players);
 
   function transformFullName(fullName) {
     if (fullName.toLowerCase().includes('captain')) {
