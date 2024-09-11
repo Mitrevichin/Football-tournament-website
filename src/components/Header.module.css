@@ -37,3 +37,21 @@
     background: rgba(0, 0, 0, 0.743);
     z-index: 1;
 }
+
+@media screen and (max-width: 1025px) {
+    .header {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}

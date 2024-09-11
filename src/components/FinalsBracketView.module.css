@@ -1,90 +1,12 @@
-/* :root {
-    --border: 1px solid black;
-}
-
-.finalHeading {
-    margin-top: 100px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.bracket {
-    display: flex;
-    justify-content: space-between;
-    margin: 80px 0;
-    overflow: visible;
-    width: 100%;
-}
-
-article {
-    max-width: 250px;
-    min-width: 150px;
-    padding: 0 20px 0 10px;
-    width: 17%;
-}
-
-.bracket ol {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0;
-    min-height: 100%;
-    padding: 0;
-    position: relative;
-}
-
-.bracket ol li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 0;
-    position: relative;
-    width: 100%;
-}
-
-
-article:not(:nth-child(4), :last-child) {
-
-    & li:after,
-    li:before {
-        content: "";
-        display: block;
-        position: absolute;
-    }
-
-    & li:after {
-        right: -16px;
-        width: 15px;
-    }
-
-    & li:nth-child(even):after {
-        border-bottom: var(--border);
-        border-bottom-right-radius: 0.3em;
-        border-right: var(--border);
-        bottom: 50%;
-        height: 80%;
-    }
-
-    & li:nth-child(odd):after {
-        border-right: var(--border);
-        border-top: var(--border);
-        border-top-right-radius: 0.3em;
-        height: 80%;
-        top: 50%;
-    }
-
-    & li:nth-child(odd):before {
-        border-top: var(--border);
-        bottom: -15%;
-        right: -186px;
-        width: 170px;
-    }
-} */
-
 :root {
-    --border: 1px solid var(--light-color);
+    --border: 2px solid var(--light-color);
 }
 
 .finalsContainer {
+    /* width: 1510px; */
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
     padding: 2rem;
     background: rgb(13, 30, 98);
     background: radial-gradient(circle, rgba(13, 30, 98, 1) 0%, rgba(47, 33, 68, 1) 100%);
@@ -108,9 +30,9 @@ article:not(:nth-child(4), :last-child) {
     width: 100%;
 }
 
-article {
-    max-width: 250px;
-    min-width: 150px;
+.bracket article {
+    min-width: 250px;
+    width: 300px;
     padding: 0 20px 0 10px;
     width: 17%;
 }
@@ -194,4 +116,14 @@ article[aria-labelledby="quarter-finals"] li:nth-child(3):before {
     border-top: var(--border);
     right: -186px;
     width: 170px;
+}
+
+@media screen and (max-width: 426px) {
+    :root {
+        --border: 3px solid var(--light-color);
+    }
+
+    .bracket article {
+        min-width: 220px;
+    }
 }
