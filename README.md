@@ -2,8 +2,6 @@
 
 # European Football Championship React App
 
-[Visit the app](https://football-tournament-app-euro-2024.vercel.app/)
-
 **Objective:**  
 Develop a dynamic and interactive React web application to visualize and manage data for the European Football Championship. The application processes and displays data from multiple CSV files, providing users with a detailed overview of the tournament, including match details, team statistics, and progression through various stages, from group stages to knockout rounds.
 
