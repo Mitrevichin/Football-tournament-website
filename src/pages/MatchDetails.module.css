@@ -226,6 +226,10 @@
         width: 100%;
         background-color: rgba(0, 0, 0, 0.312);
     }
+
+    .teamAPitch {
+        gap: 3.1rem;
+    }
 }
 
 
