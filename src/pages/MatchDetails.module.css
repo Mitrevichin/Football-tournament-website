@@ -216,6 +216,16 @@
         align-items: center;
         gap: 30px;
     }
+
+    .wholePitch::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 89%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.312);
+    }
 }
 
 
